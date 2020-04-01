@@ -3,23 +3,23 @@ import me from './assets/img/me.jpeg';
 
 function App() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen font-openSans">
       <header className="flex flex-row justify-center border-t-8 border-red-600">
-        <div className="flex flex-col sm:w-full items-center lg:w-2/5">
-          <div className="w-64 pt-10 lg:hidden">
+        <div className="flex flex-col mobile:w-full items-center laptop:w-2/5">
+          <div className="w-64 pt-10 laptop:hidden">
             <img className="rounded-full border border-red-500 p-1" src={me} alt="Jimmy Tang" />
           </div>
-          <h1 className="text-6xl">
-            <span className="font-bold text-red-600">jimmy</span>
-            <span className="font-medium text-red-800">tang</span>
+          <h1 className="mobile:text-5xl">
+            <span className="font-extrabold text-red-600">jimmy</span>
+            <span className="font-bold text-red-800">tang</span>
           </h1>
           <p className="text-3xl font-medium text-gray-700 text-center">Software Developer</p>
         </div>
-        <div className="w-48 hidden lg:block">
+        <div className="w-48 hidden laptop:block">
           <img className="rounded-full border object-cover object-center border-red-500 p-1" src={me} alt="Jimmy Tang" />
         </div>
       </header>
-      <section>
+      <section className="text-xl">
         Hi my name is Jimmy Tang a 
       </section>
       <nav className="mx-8 pb-32 border-b border-gray-500">
