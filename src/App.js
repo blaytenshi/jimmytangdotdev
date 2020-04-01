@@ -3,24 +3,36 @@ import me from './assets/img/me.jpeg';
 
 function App() {
   return (
-    <div className="flex flex-col">
-      <header className="border-t-8 border-red-600">
-        <div className="flex justify-center py-12">
-          <div>
-            <h1 className="text-6xl text-center py-4"><span className="font-bold text-red-600">jimmy</span><span className="font-medium text-red-800">tang</span></h1>
-            <p className="text-3xl font-bold text-gray-800 py-4">Hi, I'm Jimmy! A Software Developer from Sydney, Australia!</p>
+    <div className="flex flex-col min-h-screen">
+      <header className="flex flex-row justify-center border-t-8 border-red-600">
+        <div className="flex flex-col sm:w-full items-center lg:w-2/5">
+          <div className="w-64 pt-10 lg:hidden">
+            <img className="rounded-full border border-red-500 p-1" src={me} alt="Jimmy Tang" />
           </div>
-          <div>
-            <img className="h-48 rounded-full mx-auto border border-gray-500 p-1" src={me} />
-          </div>
+          <h1 className="text-6xl">
+            <span className="font-bold text-red-600">jimmy</span>
+            <span className="font-medium text-red-800">tang</span>
+          </h1>
+          <p className="text-3xl font-medium text-gray-700 text-center">Software Developer</p>
+        </div>
+        <div className="w-48 hidden lg:block">
+          <img className="rounded-full border object-cover object-center border-red-500 p-1" src={me} alt="Jimmy Tang" />
         </div>
       </header>
+      <section>
+        Hi my name is Jimmy Tang a 
+      </section>
+      <nav className="mx-8 pb-32 border-b border-gray-500">
+        <button className="btn sm:text-2xl sm:w-full md:w-64">About Me</button>
+        <button className="btn sm:text-2xl sm:w-full md:w-64">My Experiences</button>
+        <button className="btn sm:text-2xl sm:w-full md:w-64">Portfolio</button>
+      </nav>
       <main>
         <p>blah blah</p>
       </main>
       <footer className="bg-red-600">
-        <div className="container mx-auto py-8">
-          <p className="text-white">Copyright 2020. All rights reserved.</p>
+        <div className="container mx-auto py-8 sm:p-4">
+          <p className="text-white">© Jimmy Tang 2020</p>
         </div>
       </footer>
     </div>

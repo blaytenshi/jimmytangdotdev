@@ -4,4 +4,20 @@
 
 @tailwind components;
 
+.btn {
+  @apply px-2 py-3 border border-red-700 rounded-lg bg-red-600 text-white font-medium tracking-wider
+}
+
+.btn:focus{
+  @apply outline-none shadow-outline
+}
+
+.btn:hover {
+  @apply bg-red-500
+}
+
+.btn:active {
+  @apply bg-red-700
+}
+
 @tailwind utilities;
