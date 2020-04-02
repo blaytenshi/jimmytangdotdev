@@ -635,6 +635,13 @@ video {
   background-color: #c53030
 }
 
+.emoji {
+  display: inline-block;
+  width: auto;
+  height: 1em;
+  vertical-align: -0.125em;
+}
+
 .sr-only{
   position: absolute;
   width: 1px;

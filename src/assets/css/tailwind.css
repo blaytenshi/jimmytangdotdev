@@ -20,4 +20,11 @@
   @apply bg-red-700
 }
 
+.emoji {
+  display: inline-block;
+  width: auto;
+  height: 1em;
+  vertical-align: -0.125em;
+}
+
 @tailwind utilities;
