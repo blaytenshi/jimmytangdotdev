@@ -584,28 +584,32 @@ video {
   width: 100%;
 }
 
-@media (min-width: 360px){
+@media (min-width: 480px){
   .container{
-    max-width: 360px;
+    max-width: 480px;
   }
 }
 
-@media (min-width: 640px){
+@media (min-width: 768px){
   .container{
-    max-width: 640px;
+    max-width: 768px;
   }
 }
 
-@media (min-width: 1280px){
+@media (min-width: 992px){
   .container{
-    max-width: 1280px;
+    max-width: 992px;
   }
 }
 
-@media (min-width: 1920px){
+@media (min-width: 1200px){
   .container{
-    max-width: 1920px;
+    max-width: 1200px;
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .btn {
@@ -619,7 +623,19 @@ video {
   background-color: #e53e3e;
   color: #fff;
   font-weight: 500;
-  letter-spacing: 0.05em
+  letter-spacing: 0.05em;
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --transform-translate-x: 0;
+  --transform-translate-y: 0;
+  --transform-rotate: 0;
+  --transform-skew-x: 0;
+  --transform-skew-y: 0;
+  --transform-scale-x: 1;
+  --transform-scale-y: 1;
+  transform: translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y))
 }
 
 .btn:focus{
@@ -628,11 +644,33 @@ video {
 }
 
 .btn:hover {
-  background-color: #f56565
+  background-color: #f56565;
+  --transform-translate-y: -0.25rem
 }
 
 .btn:active {
   background-color: #c53030
+}
+
+.social {
+  transition-property: transform;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --transform-translate-x: 0;
+  --transform-translate-y: 0;
+  --transform-rotate: 0;
+  --transform-skew-x: 0;
+  --transform-skew-y: 0;
+  --transform-scale-x: 1;
+  --transform-scale-y: 1;
+  transform: translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y))
+}
+
+.social:hover {
+  --transform-translate-y: -0.5rem;
+  --transform-scale-x: 1.25;
+  --transform-scale-y: 1.25;
+  cursor: pointer
 }
 
 .emoji {
@@ -5569,19 +5607,19 @@ video {
 }
 
 .max-w-screen-mobile{
-  max-width: 360px;
+  max-width: 480px;
 }
 
 .max-w-screen-tablet{
-  max-width: 640px;
+  max-width: 768px;
 }
 
 .max-w-screen-laptop{
-  max-width: 1280px;
+  max-width: 992px;
 }
 
 .max-w-screen-desktop{
-  max-width: 1920px;
+  max-width: 1200px;
 }
 
 .min-h-0{
@@ -11280,6 +11318,62 @@ video {
   transition-property: transform;
 }
 
+.hover\:transition-none:hover{
+  transition-property: none;
+}
+
+.hover\:transition-all:hover{
+  transition-property: all;
+}
+
+.hover\:transition:hover{
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+}
+
+.hover\:transition-colors:hover{
+  transition-property: background-color, border-color, color, fill, stroke;
+}
+
+.hover\:transition-opacity:hover{
+  transition-property: opacity;
+}
+
+.hover\:transition-shadow:hover{
+  transition-property: box-shadow;
+}
+
+.hover\:transition-transform:hover{
+  transition-property: transform;
+}
+
+.focus\:transition-none:focus{
+  transition-property: none;
+}
+
+.focus\:transition-all:focus{
+  transition-property: all;
+}
+
+.focus\:transition:focus{
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+}
+
+.focus\:transition-colors:focus{
+  transition-property: background-color, border-color, color, fill, stroke;
+}
+
+.focus\:transition-opacity:focus{
+  transition-property: opacity;
+}
+
+.focus\:transition-shadow:focus{
+  transition-property: box-shadow;
+}
+
+.focus\:transition-transform:focus{
+  transition-property: transform;
+}
+
 .ease-linear{
   transition-timing-function: linear;
 }
@@ -11328,7 +11422,7 @@ video {
   transition-duration: 1000ms;
 }
 
-@media (min-width: 360px){
+@media (min-width: 480px){
   .mobile\:sr-only{
     position: absolute;
     width: 1px;
@@ -16256,19 +16350,19 @@ video {
   }
 
   .mobile\:max-w-screen-mobile{
-    max-width: 360px;
+    max-width: 480px;
   }
 
   .mobile\:max-w-screen-tablet{
-    max-width: 640px;
+    max-width: 768px;
   }
 
   .mobile\:max-w-screen-laptop{
-    max-width: 1280px;
+    max-width: 992px;
   }
 
   .mobile\:max-w-screen-desktop{
-    max-width: 1920px;
+    max-width: 1200px;
   }
 
   .mobile\:min-h-0{
@@ -21967,6 +22061,62 @@ video {
     transition-property: transform;
   }
 
+  .mobile\:hover\:transition-none:hover{
+    transition-property: none;
+  }
+
+  .mobile\:hover\:transition-all:hover{
+    transition-property: all;
+  }
+
+  .mobile\:hover\:transition:hover{
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  }
+
+  .mobile\:hover\:transition-colors:hover{
+    transition-property: background-color, border-color, color, fill, stroke;
+  }
+
+  .mobile\:hover\:transition-opacity:hover{
+    transition-property: opacity;
+  }
+
+  .mobile\:hover\:transition-shadow:hover{
+    transition-property: box-shadow;
+  }
+
+  .mobile\:hover\:transition-transform:hover{
+    transition-property: transform;
+  }
+
+  .mobile\:focus\:transition-none:focus{
+    transition-property: none;
+  }
+
+  .mobile\:focus\:transition-all:focus{
+    transition-property: all;
+  }
+
+  .mobile\:focus\:transition:focus{
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  }
+
+  .mobile\:focus\:transition-colors:focus{
+    transition-property: background-color, border-color, color, fill, stroke;
+  }
+
+  .mobile\:focus\:transition-opacity:focus{
+    transition-property: opacity;
+  }
+
+  .mobile\:focus\:transition-shadow:focus{
+    transition-property: box-shadow;
+  }
+
+  .mobile\:focus\:transition-transform:focus{
+    transition-property: transform;
+  }
+
   .mobile\:ease-linear{
     transition-timing-function: linear;
   }
@@ -22016,7 +22166,7 @@ video {
   }
 }
 
-@media (min-width: 640px){
+@media (min-width: 768px){
   .tablet\:sr-only{
     position: absolute;
     width: 1px;
@@ -26944,19 +27094,19 @@ video {
   }
 
   .tablet\:max-w-screen-mobile{
-    max-width: 360px;
+    max-width: 480px;
   }
 
   .tablet\:max-w-screen-tablet{
-    max-width: 640px;
+    max-width: 768px;
   }
 
   .tablet\:max-w-screen-laptop{
-    max-width: 1280px;
+    max-width: 992px;
   }
 
   .tablet\:max-w-screen-desktop{
-    max-width: 1920px;
+    max-width: 1200px;
   }
 
   .tablet\:min-h-0{
@@ -32655,6 +32805,62 @@ video {
     transition-property: transform;
   }
 
+  .tablet\:hover\:transition-none:hover{
+    transition-property: none;
+  }
+
+  .tablet\:hover\:transition-all:hover{
+    transition-property: all;
+  }
+
+  .tablet\:hover\:transition:hover{
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  }
+
+  .tablet\:hover\:transition-colors:hover{
+    transition-property: background-color, border-color, color, fill, stroke;
+  }
+
+  .tablet\:hover\:transition-opacity:hover{
+    transition-property: opacity;
+  }
+
+  .tablet\:hover\:transition-shadow:hover{
+    transition-property: box-shadow;
+  }
+
+  .tablet\:hover\:transition-transform:hover{
+    transition-property: transform;
+  }
+
+  .tablet\:focus\:transition-none:focus{
+    transition-property: none;
+  }
+
+  .tablet\:focus\:transition-all:focus{
+    transition-property: all;
+  }
+
+  .tablet\:focus\:transition:focus{
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  }
+
+  .tablet\:focus\:transition-colors:focus{
+    transition-property: background-color, border-color, color, fill, stroke;
+  }
+
+  .tablet\:focus\:transition-opacity:focus{
+    transition-property: opacity;
+  }
+
+  .tablet\:focus\:transition-shadow:focus{
+    transition-property: box-shadow;
+  }
+
+  .tablet\:focus\:transition-transform:focus{
+    transition-property: transform;
+  }
+
   .tablet\:ease-linear{
     transition-timing-function: linear;
   }
@@ -32704,7 +32910,7 @@ video {
   }
 }
 
-@media (min-width: 1280px){
+@media (min-width: 992px){
   .laptop\:sr-only{
     position: absolute;
     width: 1px;
@@ -37632,19 +37838,19 @@ video {
   }
 
   .laptop\:max-w-screen-mobile{
-    max-width: 360px;
+    max-width: 480px;
   }
 
   .laptop\:max-w-screen-tablet{
-    max-width: 640px;
+    max-width: 768px;
   }
 
   .laptop\:max-w-screen-laptop{
-    max-width: 1280px;
+    max-width: 992px;
   }
 
   .laptop\:max-w-screen-desktop{
-    max-width: 1920px;
+    max-width: 1200px;
   }
 
   .laptop\:min-h-0{
@@ -43343,6 +43549,62 @@ video {
     transition-property: transform;
   }
 
+  .laptop\:hover\:transition-none:hover{
+    transition-property: none;
+  }
+
+  .laptop\:hover\:transition-all:hover{
+    transition-property: all;
+  }
+
+  .laptop\:hover\:transition:hover{
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  }
+
+  .laptop\:hover\:transition-colors:hover{
+    transition-property: background-color, border-color, color, fill, stroke;
+  }
+
+  .laptop\:hover\:transition-opacity:hover{
+    transition-property: opacity;
+  }
+
+  .laptop\:hover\:transition-shadow:hover{
+    transition-property: box-shadow;
+  }
+
+  .laptop\:hover\:transition-transform:hover{
+    transition-property: transform;
+  }
+
+  .laptop\:focus\:transition-none:focus{
+    transition-property: none;
+  }
+
+  .laptop\:focus\:transition-all:focus{
+    transition-property: all;
+  }
+
+  .laptop\:focus\:transition:focus{
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  }
+
+  .laptop\:focus\:transition-colors:focus{
+    transition-property: background-color, border-color, color, fill, stroke;
+  }
+
+  .laptop\:focus\:transition-opacity:focus{
+    transition-property: opacity;
+  }
+
+  .laptop\:focus\:transition-shadow:focus{
+    transition-property: box-shadow;
+  }
+
+  .laptop\:focus\:transition-transform:focus{
+    transition-property: transform;
+  }
+
   .laptop\:ease-linear{
     transition-timing-function: linear;
   }
@@ -43392,7 +43654,7 @@ video {
   }
 }
 
-@media (min-width: 1920px){
+@media (min-width: 1200px){
   .desktop\:sr-only{
     position: absolute;
     width: 1px;
@@ -48320,19 +48582,19 @@ video {
   }
 
   .desktop\:max-w-screen-mobile{
-    max-width: 360px;
+    max-width: 480px;
   }
 
   .desktop\:max-w-screen-tablet{
-    max-width: 640px;
+    max-width: 768px;
   }
 
   .desktop\:max-w-screen-laptop{
-    max-width: 1280px;
+    max-width: 992px;
   }
 
   .desktop\:max-w-screen-desktop{
-    max-width: 1920px;
+    max-width: 1200px;
   }
 
   .desktop\:min-h-0{
@@ -54028,6 +54290,62 @@ video {
   }
 
   .desktop\:transition-transform{
+    transition-property: transform;
+  }
+
+  .desktop\:hover\:transition-none:hover{
+    transition-property: none;
+  }
+
+  .desktop\:hover\:transition-all:hover{
+    transition-property: all;
+  }
+
+  .desktop\:hover\:transition:hover{
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  }
+
+  .desktop\:hover\:transition-colors:hover{
+    transition-property: background-color, border-color, color, fill, stroke;
+  }
+
+  .desktop\:hover\:transition-opacity:hover{
+    transition-property: opacity;
+  }
+
+  .desktop\:hover\:transition-shadow:hover{
+    transition-property: box-shadow;
+  }
+
+  .desktop\:hover\:transition-transform:hover{
+    transition-property: transform;
+  }
+
+  .desktop\:focus\:transition-none:focus{
+    transition-property: none;
+  }
+
+  .desktop\:focus\:transition-all:focus{
+    transition-property: all;
+  }
+
+  .desktop\:focus\:transition:focus{
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  }
+
+  .desktop\:focus\:transition-colors:focus{
+    transition-property: background-color, border-color, color, fill, stroke;
+  }
+
+  .desktop\:focus\:transition-opacity:focus{
+    transition-property: opacity;
+  }
+
+  .desktop\:focus\:transition-shadow:focus{
+    transition-property: box-shadow;
+  }
+
+  .desktop\:focus\:transition-transform:focus{
     transition-property: transform;
   }
 

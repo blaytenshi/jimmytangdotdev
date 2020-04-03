@@ -1,10 +1,10 @@
 module.exports = {
   theme: {
     screens: {
-      'mobile': '360px',
-      'tablet': '640px',
-      'laptop': '1280px',
-      'desktop': '1920px'
+      'mobile': '480px',
+      'tablet': '768px',
+      'laptop': '992px',
+      'desktop': '1200px'
     },
     extend: {
       fontFamily: {
@@ -16,7 +16,8 @@ module.exports = {
     },
   },
   variants: {
-    backgroundColor: ['responsive', 'hover', 'focus', 'active']
+    backgroundColor: ['responsive', 'hover', 'focus', 'active'],
+    transitionProperty: ['responsive', 'hover', 'focus']
   },
   plugins: [],
 };

@@ -4,8 +4,12 @@
 
 @tailwind components;
 
+html {
+  scroll-behavior: smooth;
+}
+
 .btn {
-  @apply px-2 py-3 border border-red-700 rounded-lg bg-red-600 text-white font-medium tracking-wider
+  @apply px-2 py-3 border border-red-700 rounded-lg bg-red-600 text-white font-medium tracking-wider transition-colors transition duration-300 ease-in-out transform
 }
 
 .btn:focus{
@@ -13,11 +17,19 @@
 }
 
 .btn:hover {
-  @apply bg-red-500
+  @apply bg-red-500 -translate-y-1
 }
 
 .btn:active {
   @apply bg-red-700
+}
+
+.social {
+  @apply transition-transform duration-300 ease-in-out transform
+}
+
+.social:hover {
+  @apply -translate-y-2 scale-125 cursor-pointer
 }
 
 .emoji {
