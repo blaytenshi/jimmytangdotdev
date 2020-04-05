@@ -35,7 +35,12 @@ function App() {
         </div>
       </header>
       <section className="container mx-auto px-8 py-12 border-b border-red-500 laptop:w-3/5 max-w-screen-laptop">
-        <p className="text-xl font-bold text-center">Hi! <Twemoji emoji="😀"/> My name is Jimmy and I'm a software developer from Sydney, Australia. I currently specialise in Front End Web Development but also have experience in various aspects of software development such as testing, server side APIs and so on! This website isn't finished yet... but come back soon!</p>
+        <p className="body-text pb-8 ">
+          Hi! <Twemoji emoji="🙋‍♂️"/> My name is Jimmy and I'm a software developer from Sydney, Australia. Besides my passion in software and technology, I'm also quite an avid photographer <Twemoji emoji="📸"/>, adventurous traveller <Twemoji emoji="🛫"/> and a foodie that is forever hungry <Twemoji emoji="🍽️"/>! This website is a place for me to tinker with code and maybe a place to place my thoughts in the future. For more about me and my experiences feel free to explore below!
+        </p>
+        <p className="body-text">
+          I'm currently in search of my next role! <Twemoji emoji="👨🏻‍💻"/> I, along with many of my talented colleagues, were recently made redundant due to the unfortunate impact of COVID19. So, if you have a role in need of an enthusiastic, energetic, web developer with a passion for building great user experiences in cross functional and collaborative teams, please reach out!
+        </p>
       </section>
       <nav className="container mx-auto px-8 py-12 border-b border-red-500 flex flex-col w-full laptop:flex-row laptop:w-3/5 laptop:justify-between max-w-screen-laptop">
         <button className="btn m-2 text-2xl w-full laptop:text-sm" onClick={() => scrollToRef(aboutMeRef)}>About Me</button>

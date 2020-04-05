@@ -39,4 +39,8 @@ html {
   vertical-align: -0.125em;
 }
 
+.body-text {
+  @apply text-xl font-bold text-center text-gray-800
+}
+
 @tailwind utilities;
