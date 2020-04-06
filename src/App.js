@@ -34,12 +34,12 @@ function App() {
           <img className="rounded-full border object-cover object-center border-red-500 p-1" src={me} alt="Jimmy Tang"/>
         </div>
       </header>
-      <section className="container mx-auto px-8 py-12 border-b border-red-500 laptop:w-3/5 max-w-screen-laptop">
-        <p className="body-text pb-8 ">
-          Hi! <Twemoji emoji="🙋‍♂️"/> My name is Jimmy and I'm a software developer from Sydney, Australia. Besides my passion in software and technology, I'm also quite an avid photographer <Twemoji emoji="📸"/>, adventurous traveller <Twemoji emoji="🛫"/> and a foodie that is forever hungry <Twemoji emoji="🍽️"/>! This website is a place for me to tinker with code and maybe a place to place my thoughts in the future. For more about me and my experiences feel free to explore below!
+      <section className="container mx-auto px-8 py-12 border-b border-red-500 laptop:w-3/5 max-w-screen-laptop intro-text">
+        <p className="pb-8">
+          Hi! My name is Jimmy and I'm a software developer from Sydney, Australia. Although I currently specialise in Front End Web Development, I also have a variety of experience in all areas of software development from Product Design to API Integrations.
         </p>
-        <p className="body-text">
-          I'm currently in search of my next role! <Twemoji emoji="👨🏻‍💻"/> I, along with many of my talented colleagues, were recently made redundant due to the unfortunate impact of COVID19. So, if you have a role in need of an enthusiastic, energetic, web developer with a passion for building great user experiences in cross functional and collaborative teams, please reach out!
+        <p>
+          I'm currently in search of my next role! <Twemoji emoji="👨🏻‍💻"/> If you have a need for an enthusiastic, energetic, web developer with a passion for building great user experiences in cross functional and collaborative teams, take a look at my <a href="#" className="text-red-500 underline">resume</a> and reach out!
         </p>
       </section>
       <nav className="container mx-auto px-8 py-12 border-b border-red-500 flex flex-col w-full laptop:flex-row laptop:w-3/5 laptop:justify-between max-w-screen-laptop">
@@ -54,7 +54,18 @@ function App() {
             <span className="font-extrabold text-red-600">About</span>
             <span className="font-bold text-red-800">Me</span>
           </h2>
-          <p className="text-lg tablet:text-xl">I'm an pretty cool guy and doesn't afraid of anything</p>
+          <div className="bg-red-500 h-64 text-white">A couple'a photos</div>
+          <p className="body-text">
+            Besides my passion in software and technology, I'm also:
+          </p>
+          <ul className="body-text px-4 py-2">
+            <li><Twemoji emoji="📸"/><span className="ml-4">An avid photographer</span></li> 
+            <li><Twemoji emoji="🛫"/><span className="ml-4">An adventurous traveller</span></li>
+            <li><Twemoji emoji="🍽️"/><span className="ml-4">A forever hungry foodie</span></li>
+            <li><Twemoji emoji="🏋️‍♂️"/><span className="ml-4">A fitness junkie</span></li>
+            <li><Twemoji emoji="🎮"/><span className="ml-4">A casual gamer</span></li>
+          </ul>
+          <p className="body-text">This website is a place for me to tinker with code and maybe a place to hold my thoughts in the future. For more about me and my experiences feel free to explore below!</p>
         </section>
         <section className="px-8 py-12 border-b border-red-500" ref={myExperienceRef}>
           <h2 className="text-3xl">

@@ -680,11 +680,20 @@ html {
   vertical-align: -0.125em;
 }
 
-.body-text {
+.intro-text {
   font-size: 1.25rem;
   font-weight: 700;
   text-align: center;
   color: #2d3748
+}
+
+.body-text {
+  font-size: 1.125rem;
+  color: #2d3748
+}
+
+a:hover {
+  text-decoration: none
 }
 
 .sr-only{

@@ -39,8 +39,16 @@ html {
   vertical-align: -0.125em;
 }
 
-.body-text {
+.intro-text {
   @apply text-xl font-bold text-center text-gray-800
+}
+
+.body-text {
+  @apply text-lg text-gray-800
+}
+
+a:hover {
+  @apply no-underline
 }
 
 @tailwind utilities;
