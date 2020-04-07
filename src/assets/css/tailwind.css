@@ -9,7 +9,7 @@ html {
 }
 
 .btn {
-  @apply px-2 py-3 border border-red-700 rounded-lg bg-red-600 text-white font-medium tracking-wider transition-colors transition duration-300 ease-in-out transform
+  @apply px-2 py-3 border border-red-700 rounded-lg bg-red-600 text-white font-bold tracking-wider transition-colors transition duration-300 ease-in-out transform
 }
 
 .btn:focus{
