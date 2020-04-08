@@ -22,36 +22,37 @@ export default () => {
       slidesPerPage={1}
       infinite
       clickToChange
+      centered
     >
-      <div className="px-2">
-        <img className="rounded-lg mobile:w-full tablet:w-4/5" src={bondi} alt="interesting miniature house installation sculptures by the sea" />
+      <div className="px-2 mobile:w-full tablet:w-4/5">
+        <img className="rounded-lg" src={bondi} alt="interesting miniature house installation sculptures by the sea" />
       </div>
-      <div className="px-2">
-        <img className="rounded-lg mobile:w-full tablet:w-4/5" src={coralbay} alt="knee deep in crystal clear waters at coral bay western australia" />
+      <div className="px-2 mobile:w-full tablet:w-4/5">
+        <img className="rounded-lg" src={coralbay} alt="knee deep in crystal clear waters at coral bay western australia" />
       </div>
-      <div className="px-2">
-        <img className="rounded-lg mobile:w-full tablet:w-4/5" src={matterhorn} alt="matterhorn switzerland" />
+      <div className="px-2 mobile:w-full tablet:w-4/5">
+        <img className="rounded-lg" src={matterhorn} alt="matterhorn switzerland" />
       </div>
-      <div className="px-2">
-        <img className="rounded-lg mobile:w-full tablet:w-4/5" src={narooma} alt="drone shot from narooma new south wales" />
+      <div className="px-2 mobile:w-full tablet:w-4/5">
+        <img className="rounded-lg" src={narooma} alt="drone shot from narooma new south wales" />
       </div>
-      <div className="px-2">
-        <img className="rounded-lg mobile:w-full tablet:w-4/5" src={paris} alt="standing in front of eiffel tower paris" />
+      <div className="px-2 mobile:w-full tablet:w-4/5">
+        <img className="rounded-lg" src={paris} alt="standing in front of eiffel tower paris" />
       </div>
-      <div className="px-2">
-        <img className="rounded-lg mobile:w-full tablet:w-4/5" src={rigi} alt="mount rigi switzerland with fog beneath" />
+      <div className="px-2 mobile:w-full tablet:w-4/5">
+        <img className="rounded-lg" src={rigi} alt="mount rigi switzerland with fog beneath" />
       </div>
-      <div className="px-2">
-        <img className="rounded-lg mobile:w-full tablet:w-4/5" src={stars} alt="night time long exposure of the galaxy" />
+      <div className="px-2 mobile:w-full tablet:w-4/5">
+        <img className="rounded-lg" src={stars} alt="night time long exposure of the galaxy" />
       </div>
-      <div className="px-2">
-        <img className="rounded-lg mobile:w-full tablet:w-4/5" src={thousandisland} alt="thousand island lake in hong kong" />
+      <div className="px-2 mobile:w-full tablet:w-4/5">
+        <img className="rounded-lg" src={thousandisland} alt="thousand island lake in hong kong" />
       </div>
-      <div className="px-2">
-        <img className="rounded-lg mobile:w-full tablet:w-4/5" src={truffles} alt="home made truffle pasta dish at pyrmont sydney" />
+      <div className="px-2 mobile:w-full tablet:w-4/5">
+        <img className="rounded-lg" src={truffles} alt="home made truffle pasta dish at pyrmont sydney" />
       </div>
-      <div className="px-2">
-        <img className="rounded-lg mobile:w-full tablet:w-4/5" src={venice} alt="Santa Maria Bascilica Venice Italy" />
+      <div className="px-2 mobile:w-full tablet:w-4/5">
+        <img className="rounded-lg" src={venice} alt="Santa Maria Bascilica Venice Italy" />
       </div>
     </Carousel>
   )

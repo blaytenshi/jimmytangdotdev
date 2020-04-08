@@ -45,7 +45,7 @@ function App() {
       </section>
       <nav className="container mx-auto px-8 py-12 border-b border-red-500 flex flex-col w-full laptop:flex-row laptop:w-3/5 laptop:justify-between max-w-screen-laptop">
         <button className="btn m-2 text-2xl w-full laptop:text-sm" onClick={() => scrollToRef(aboutMeRef)}>About Me</button>
-        <button className="btn m-2 text-2xl w-full laptop:text-sm" onClick={() => scrollToRef(myExperienceRef)}>My Experience</button>
+        <button className="btn m-2 text-2xl w-full laptop:text-sm" onClick={() => scrollToRef(myExperienceRef)}>Origin Story</button>
         <button className="btn m-2 text-2xl w-full laptop:text-sm" onClick={() => scrollToRef(myPortfolioRef)}>My Portfolio</button>
         <button className="btn m-2 text-2xl w-full laptop:text-sm" onClick={() => scrollToRef(contactMeRef)}>Contact Me</button>
       </nav>
@@ -70,8 +70,8 @@ function App() {
         </section>
         <section className="px-8 py-12 border-b border-red-500" ref={myExperienceRef}>
           <h2 className="text-3xl">
-            <span className="font-extrabold text-red-600">My</span>
-            <span className="font-bold text-red-800">Experience</span>
+            <span className="font-extrabold text-red-600">Origin</span>
+            <span className="font-bold text-red-800">Story</span>
           </h2>
         </section>
         <section className="px-8 py-12 border-b border-red-500" ref={myPortfolioRef}>
