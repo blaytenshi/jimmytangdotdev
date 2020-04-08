@@ -72,6 +72,21 @@ function App() {
           <h2 className="text-3xl">
             <span className="font-extrabold text-red-600">Origin</span>
             <span className="font-bold text-red-800">Story</span>
+            <p className="body-text py-2">
+              I’ve always been fascinated with computers as a child. From gaming to the Internet. Having been exposed to web development since high school, I decided to pursue an engineering degree. From there I took up a scholarship funded intern position at Thales Australia working on some of their training simulators.
+            </p>
+            <p className="body-text py-2">
+              Upon graduation I settled on a graduate role at a Mint Payments, a small payments processing start up. At Mint, I worked on their monolithic web applications built with JSP, Spring and PHP before finally making a jump to UTS to work on various projects ranging from IoT to 3D Printing.
+            </p>
+            <p className="body-text py-2">
+              Despite the focus on more hardware based projects, the web had never left my heart. At UTS, I taught myself React and the nuances of Javascript, diving ever deeper into web development. My crowning achievement there; the TKSSIR, an app designed to assist the Stay Kind Foundation in providing assistance to the youths and the homeless in Sydney’s streets.
+            </p>
+            <p className="body-text py-2">
+              In summer of 2019, I decided to jump back into the world of fintech. Joining Grow, a superannuation disruptor startup with the goal of building a better, blockchain-based superannuation administration platform for the betterment of all retiring Australians. Unfortunately, due to the economic pressures of COVID-19, all staff were made redundant.
+            </p>
+            <p className="body-text py-2">
+              Not allowing myself to be sidelined, I’ve since redoubled my efforts on improvement and self learning.
+            </p>
           </h2>
         </section>
         <section className="px-8 py-12 border-b border-red-500" ref={myPortfolioRef}>
