@@ -13,7 +13,7 @@ import thousandisland from '../assets/img/thousandisland.jpg';
 import truffles from '../assets/img/truffles.jpg';
 import venice from '../assets/img/venice.jpg';
 
-export default () => {
+const PictureCarousel = () => {
   return (
     <Carousel
       dots
@@ -57,3 +57,5 @@ export default () => {
     </Carousel>
   )
 }
+
+export default PictureCarousel;
