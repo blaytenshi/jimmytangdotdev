@@ -2,7 +2,7 @@ import React from "react";
 
 const TKSSIR = () => {
   return (
-    <div className="container px-8 py-12 mx-auto laptop:w-3/5 max-w-screen-laptop">
+    <div className="container px-8 py-12 mx-auto">
       <article>
         <h2 className="text-3xl font-bold text-red-600">Going from Paper to Digital</h2>
         <section className="px-2">
@@ -20,16 +20,16 @@ const TKSSIR = () => {
             to deploy their teams and how better to utilise their resources.
           </p>
         </section>
-        <section>
-          <h3 className="text-2xl font-bold text-gray-700">Thoughs</h3>
+        <section className="px-2">
+          <h3 className="text-2xl font-bold text-gray-700">Thoughts</h3>
           <p>
             This section is currently in progress! Stay tuned!
           </p>
         </section>
-        <section>
+        <section className="px-2">
           <h3 className="text-2xl font-bold text-gray-700">Technology</h3>
           <p>
-            React, React Route, Redux, Redux-Forms, Firebase, Google Cloud Platform, Firebase Functions, Semantic UI
+            React, React Router, Redux, Redux-Forms, Firebase, Google Cloud Platform, Firebase Functions, Semantic UI
           </p>
         </section>
       </article>

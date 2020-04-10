@@ -32,7 +32,7 @@ function App() {
           <img className="rounded-full border object-cover object-center border-red-500 p-1" src={me} alt="Jimmy Tang"/>
         </div>
       </header>
-      <main className="container mx-auto laptop:w-3/5 max-w-screen-laptop">
+      <main className="container mx-auto laptop:w-3/5 max-w-screen-laptop flex-grow">
         <Switch>
           <Route path="/originstory" component={OriginStory} />
           <Route path="/work/tkssir" component={TKSSIR} />
