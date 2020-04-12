@@ -6,7 +6,7 @@ const ArticleCard = ({ image, description }) => {
     <div className="relative w-full">
       <img src={image} className="h-64 object-cover w-full"/>
       <div className="absolute bottom-0 bg-white w-full opacity-75">
-        <p className="px-4 py-2">{description}</p>
+        <p className="px-4 py-2 font-bold">{description}</p>
       </div>
     </div>
   )
