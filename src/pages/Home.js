@@ -39,18 +39,17 @@ const Home = () => {
           <span className="font-extrabold text-red-600">My</span>
           <span className="font-bold text-red-800">Work</span>
         </h2>
-        <div className="grid tablet:grid-cols-2">
-          <Link to="/work/tkssir">
+        <div className="py-4 grid tablet:grid-cols-2 gap-2">
+          <Link to="/work/tkssir" className="col-span-1">
             <ArticleCard/>
           </Link>
-          <div className="bg-red-500 col-span-1">hi</div>
-          <div className="bg-green-500 col-span-1 tablet:col-span-2">hi</div>
+          <Link to="/work/thismymob" className="col-span-1">
+            <ArticleCard/>
+          </Link>
+          <Link to="/work/tina" className="col-span-1 tablet:col-span-2">
+            <ArticleCard/>
+          </Link>
         </div>
-        
-          <h3 className="text-2xl text-red-800 font-bold">TK SSIR</h3>
-        <article>
-          <h3 className="">TINA</h3>
-        </article>
       </section>
       <section className="px-8 py-12" ref={myLearningRef}>
         <h2 className="text-3xl">
@@ -60,9 +59,6 @@ const Home = () => {
         <Link to="/work/tkssir">
           <h3 className="text-2xl text-red-800 font-bold">TK SSIR</h3>
         </Link>
-        <article>
-          <h3 className="">TINA</h3>
-        </article>
       </section>
     </>
   )
