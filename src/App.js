@@ -11,6 +11,8 @@ import TKSSIR from "./pages/TKSSIR";
 import Home from "./pages/Home";
 import OriginStory from "./pages/OriginStory";
 import PersonalWebsite from "./pages/PersonalWebsite";
+import ThisMyMob from "./pages/ThisMyMob";
+import TINA from "./pages/TINA";
 import NoMatch from "./pages/NoMatch";
 
 function App() {
@@ -36,7 +38,9 @@ function App() {
         <Switch>
           <Route path="/originstory" component={OriginStory} />
           <Route path="/work/tkssir" component={TKSSIR} />
-          <Route path="/work/personalwebsitev1" component={PersonalWebsite} />
+          <Route path="/work/thismymob" component={ThisMyMob} />
+          <Route path="/work/tina" component={TINA} />
+          <Route path="/experiments/personalwebsitev1" component={PersonalWebsite} />
           <Route exact path="/" component={Home} />
           <Route component={NoMatch} />
         </Switch>

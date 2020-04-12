@@ -1,15 +1,20 @@
 import React from "react";
-import me from "../assets/img/me.jpg";
+import PropTypes from "prop-types";
 
-const ArticleCard = () => {
+const ArticleCard = ({ image, description }) => {
   return (
     <div className="relative w-full">
-      <img src={me} className="h-64 object-cover w-full"/>
+      <img src={image} className="h-64 object-cover w-full"/>
       <div className="absolute bottom-0 bg-white w-full opacity-75">
-        <p className="px-4 py-2">Going from Paper to Digital</p>
+        <p className="px-4 py-2">{description}</p>
       </div>
     </div>
   )
-}
+};
+
+ArticleCard.propTypes = {
+  image: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired
+};
 
 export default ArticleCard;

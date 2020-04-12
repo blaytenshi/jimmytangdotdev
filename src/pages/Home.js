@@ -2,8 +2,9 @@ import React, { useRef } from "react";
 import { Link, useHistory } from "react-router-dom";
 
 import Twemoji from "../components/Twemoji";
-import ArticleNavBar from "../components/ArticleNavBar";
 import ArticleCard from "../components/ArticleCard";
+
+import me from "../assets/img/me.jpg";
 
 const Home = () => {
 
@@ -41,13 +42,13 @@ const Home = () => {
         </h2>
         <div className="py-4 grid tablet:grid-cols-2 gap-2">
           <Link to="/work/tkssir" className="col-span-1">
-            <ArticleCard/>
+            <ArticleCard image={me} description="TK SSIR: Going from Paper to Digital"/>
           </Link>
           <Link to="/work/thismymob" className="col-span-1">
-            <ArticleCard/>
+            <ArticleCard image={me} description="#thisMyMob: A Social Network for Indigenous Australians"/>
           </Link>
           <Link to="/work/tina" className="col-span-1 tablet:col-span-2">
-            <ArticleCard/>
+            <ArticleCard image={me} description="Tina: A Next Gen Superannuation Admin Platform"/>
           </Link>
         </div>
       </section>
@@ -58,12 +59,12 @@ const Home = () => {
         </h2>
         <div className="py-4 grid grid-cols-1 gap-2 tablet:grid-cols-3">
           <Link to="/experiments/personalwebsitev1" className="col-span-1">
-            <ArticleCard/>
+            <ArticleCard image={me} description="Revisiting CSS and Design after more than a decade" />
           </Link>
         </div>
       </section>
     </>
   )
-}
+};
 
 export default Home;

@@ -1,6 +1,6 @@
 import React from "react";
 
-export default () => {
+const ThisMyMob = () => {
   return (
     <div className="container px-8 py-12 mx-auto laptop:w-3/5 max-w-screen-laptop">
       <article>
@@ -26,4 +26,6 @@ export default () => {
       </article>
     </div>
   )
-}
+};
+
+export default ThisMyMob;
