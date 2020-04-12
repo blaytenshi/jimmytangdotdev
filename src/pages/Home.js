@@ -56,9 +56,11 @@ const Home = () => {
           <span className="font-extrabold text-red-600">My</span>
           <span className="font-bold text-red-800">Learning</span>
         </h2>
-        <Link to="/work/tkssir">
-          <h3 className="text-2xl text-red-800 font-bold">TK SSIR</h3>
-        </Link>
+        <div className="py-4 grid grid-cols-1 gap-2 tablet:grid-cols-3">
+          <Link to="/experiments/personalwebsitev1" className="col-span-1">
+            <ArticleCard/>
+          </Link>
+        </div>
       </section>
     </>
   )

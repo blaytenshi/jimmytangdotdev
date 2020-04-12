@@ -1,19 +1,19 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 
-import me from "./assets/img/me.jpg";
-
-import TKSSIR from "./pages/TKSSIR";
-import Home from "./pages/Home";
 import {ReactComponent as GmailLogo} from "./assets/img/gmail.svg";
 import {ReactComponent as TwitterLogo} from "./assets/img/twitter.svg";
 import {ReactComponent as LinkedInLogo} from "./assets/img/linkedin.svg";
 import {ReactComponent as GithubLogo} from "./assets/img/github.svg";
+import me from "./assets/img/me.jpg";
+
+import TKSSIR from "./pages/TKSSIR";
+import Home from "./pages/Home";
 import OriginStory from "./pages/OriginStory";
+import PersonalWebsite from "./pages/PersonalWebsite";
 import NoMatch from "./pages/NoMatch";
 
 function App() {
-
   return (
     <div className="border-t-8 border-red-600 min-h-screen font-openSans flex flex-col">
       {/*<div className="w-16 h-16 fixed right-0 bg-blue-500"></div>*/}
@@ -36,6 +36,7 @@ function App() {
         <Switch>
           <Route path="/originstory" component={OriginStory} />
           <Route path="/work/tkssir" component={TKSSIR} />
+          <Route path="/work/personalwebsitev1" component={PersonalWebsite} />
           <Route exact path="/" component={Home} />
           <Route component={NoMatch} />
         </Switch>
