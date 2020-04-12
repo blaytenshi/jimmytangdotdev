@@ -2,6 +2,8 @@ import React, { useRef } from "react";
 import { Link, useHistory } from "react-router-dom";
 
 import Twemoji from "../components/Twemoji";
+import ArticleNavBar from "../components/ArticleNavBar";
+import ArticleCard from "../components/ArticleCard";
 
 const Home = () => {
 
@@ -39,7 +41,7 @@ const Home = () => {
         </h2>
         <div className="grid tablet:grid-cols-2">
           <Link to="/work/tkssir">
-            <div className="bg-blue-500 col-span-1">Going from Paper to Digital</div>
+            <ArticleCard/>
           </Link>
           <div className="bg-red-500 col-span-1">hi</div>
           <div className="bg-green-500 col-span-1 tablet:col-span-2">hi</div>

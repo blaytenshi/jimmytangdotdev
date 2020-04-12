@@ -5,9 +5,9 @@ import ArticleNavBar from "../components/ArticleNavBar";
 
 const OriginStory = () => {
   return (
-    <>
+    <div className="container mx-auto body-text border-t border-red-500 pt-4">
       <ArticleNavBar/>
-      <section className="px-8 py-8 body-text">
+      <article>
         <h2 className="text-3xl pb-2">
           <span className="font-extrabold text-red-600">Origin</span>
           <span className="font-bold text-red-800">Story</span>
@@ -47,8 +47,8 @@ const OriginStory = () => {
         <p>
           This website is a place for me to tinker with code and maybe a place to hold my thoughts in the future.
         </p>
-      </section>
-    </>
+      </article>
+    </div>
   )
 };
 
