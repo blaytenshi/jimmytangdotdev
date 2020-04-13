@@ -18,36 +18,39 @@ const PersonalWebsiteV1 = () => {
             After my stint with Grow Super came to an unfortunate end (thanks COVID-19), it was time to saddle up and 
             go out venturing for work once again! Having met so many engineers at Grow, all of them being exceptionally 
             talented and supportive, I noticed that I was one of the few without a personal website dedicated to my 
-            work and projects. I figured that in order to get noticed more by potential employers and recruiters, it 
-            was finally time to build my own! Now, I consider myself a Front End Engineer... How hard could it be...
+            work and projects. I figured that in order to get noticed more by potential employers and recruiters, (and 
+            under strong encouragement from various colleagues) it was high time to built my own! 
+            
+            Now, I consider myself a Front End Engineer... How hard could it be...
             <Twemoji emoji="🤔" />?
           </p>
         </section>
         <section className="py-2">
           <h3 className="text-2xl font-bold">Thoughts</h3>
           <p className="py-2">
-            As it turns out! Quite hard! But not for the reasons you might think...
+            As it turns out, quite hard! But not for the reasons you might think...
           </p>
           <p className="py-2">
-            Now, of course, I've had ones in the past. But the last time I made one from scratch was back in High 
-            School. It was built purely out of HTML and CSS and uploaded through FTP onto a Geocity domain. Ahh good
-            old days... in that version there was absolutely no regard for HTML, CSS conventions. 
+            Now, of course, I've built websites in the past. But the last time I made one from scratch was back in High 
+            School. It was written purely in HTML and CSS (like some kinda psychopath) and uploaded through FTP onto a 
+            Geocities domain. In that version was built with absolutely no regard for web conventions because... well, 
+            there was none in the late 90s! The web was wild back in the Browser War days!
             
             "This time, it'll be different. I'll apply the lessons I learnt in my brief stint at Grow!" I said to 
             myself, not realising the work that'll be involved.
           </p>
           <h4 className="text-xl font-bold">Choosing my stack...</h4>
           <p className="py-2">
-            Whilst at Grow, we were a Vue shop. Prior to Grow, I was in the world of React. Whilst I loved Vue for it's
-            structure and simplicity (something I'll get into in another post), React was my first SPA framework and as
-            idiom goes: "You never forget your first <Twemoji emoji="❤" />". Besides, Sydney is a React scene so of
-            course it made sense to build my front end out of React!
+            Whilst at Grow, we were a Vue shop. Whilst I love Vue for it's structure and simplicity (something I'll get
+            into in another post), React was my first SPA framework and as idiom goes: "You never forget your first 
+            <Twemoji emoji="❤" />". Besides, Sydney is a React scene so of course it made sense to build my front end
+            out of React!
           </p>
           <p className="py-2">
             Hosting and back end were an easy choice too. My experience with Firebase made it the go to solution. 
             Deployment through the Firebase CLI is a breeze and hosting is free! I didn't want to have to spin up an AWS 
-            instance and set up a whole new infrastructure for a simple portfolio site. A) I didn't have time to learn it 
-            and B) That'd be like taking a sledgehammer to tap a nail into the wall.
+            instance and set up a whole new infrastructure just for a simple portfolio site because A) I didn't have 
+            time to learn it and B) That'd be like taking a sledgehammer to tap a nail into the wall.
           </p>
           <p className="py-2">
             The final piece of the puzzle was of course, CSS and design. At Grow, our fender's team centered around 

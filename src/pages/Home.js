@@ -5,6 +5,7 @@ import Twemoji from "../components/Twemoji";
 import ArticleCard from "../components/ArticleCard";
 
 import me from "../assets/img/me.jpg";
+import tina from "../assets/img/tina.png";
 
 const Home = () => {
 
@@ -48,7 +49,7 @@ const Home = () => {
             <ArticleCard image={me} description="#thisMyMob: A Social Network for Indigenous Australians"/>
           </Link>
           <Link to="/work/tina" className="col-span-1 tablet:col-span-2">
-            <ArticleCard image={me} description="Tina: A Next Gen Superannuation Admin Platform"/>
+            <ArticleCard image={tina} description="Tina: A Next Gen Superannuation Admin Platform"/>
           </Link>
         </div>
       </section>

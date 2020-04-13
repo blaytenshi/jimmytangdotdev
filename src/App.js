@@ -50,7 +50,7 @@ function App() {
           <div className="mb-4 tablet:mb-0">© Jimmy Tang 2020</div>
           <div className="flex items-center">
             <GmailLogo className="mr-8 h-10 tablet:h-6 social" onClick={() => window.location.href = 'mailto:jimmy.gj.tang@gmail.com'}/>
-            <TwitterLogo className="mr-8 h-10 tablet:h-6 social" onClick={() => window.open('https://twitter.com/jimmytangdev')}/>
+            <TwitterLogo className="mr-8 h-10 tablet:h-6 social" onClick={() => window.open('https://twitter.com/thejimmytang')}/>
             <LinkedInLogo className="mr-8 h-10 tablet:h-6 social" onClick={() => window.open('https://www.linkedin.com/in/jimmygjtang/')}/>
             <GithubLogo className="h-10 tablet:h-6 social"/>
           </div>
