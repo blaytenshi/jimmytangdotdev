@@ -1,6 +1,10 @@
 import React from "react";
 
 const ThisMyMob = () => {
+
+  // Scroll yo'self back to the top if you scrolled down in the previous screen
+  window.scrollTo(0,0);
+  
   return (
     <div className="container px-8 py-12 mx-auto laptop:w-3/5 max-w-screen-laptop">
       <article>

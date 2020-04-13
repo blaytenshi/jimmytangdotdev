@@ -24,7 +24,7 @@ function App() {
           <div className="w-64 pt-10 laptop:hidden">
             <img className="rounded-full border border-red-500 p-1" src={me} alt="Jimmy Tang"/>
           </div>
-          <h1 className="text-5xl laptop:text-7xl">
+          <h1 className="text-5xl laptop:text-6xl desktop:text-7xl">
             <span className="font-extrabold text-red-600">jimmy</span>
             <span className="font-bold text-red-800">tang</span>
           </h1>
