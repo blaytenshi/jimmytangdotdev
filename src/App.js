@@ -46,13 +46,13 @@ function App() {
         </Switch>
       </main>
       <footer className="bg-red-600 text-white">
-        <div className="container mx-auto py-8 p-4 laptop:w-3/5 max-w-screen-laptop">
-          <p>© Jimmy Tang 2020</p>
-          <div className="py-8 flex justify-around">
-            <GmailLogo className="h-10 social" onClick={() => window.location.href = 'mailto:jimmy.gj.tang@gmail.com'}/>
-            <TwitterLogo className="h-10 social" onClick={() => window.open('https://twitter.com/jimmytangdev')}/>
-            <LinkedInLogo className="h-10 social" onClick={() => window.open('https://www.linkedin.com/in/jimmygjtang/')}/>
-            <GithubLogo className="h-10 social"/>
+        <div className="flex flex-col items-center container mx-auto justify-between py-8 tablet:px-8 tablet:flex-row laptop:w-3/5 max-w-screen-laptop">
+          <div className="mb-4 tablet:mb-0">© Jimmy Tang 2020</div>
+          <div className="flex items-center">
+            <GmailLogo className="mr-8 h-10 tablet:h-6 social" onClick={() => window.location.href = 'mailto:jimmy.gj.tang@gmail.com'}/>
+            <TwitterLogo className="mr-8 h-10 tablet:h-6 social" onClick={() => window.open('https://twitter.com/jimmytangdev')}/>
+            <LinkedInLogo className="mr-8 h-10 tablet:h-6 social" onClick={() => window.open('https://www.linkedin.com/in/jimmygjtang/')}/>
+            <GithubLogo className="h-10 tablet:h-6 social"/>
           </div>
         </div>
       </footer>
