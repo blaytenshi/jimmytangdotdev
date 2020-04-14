@@ -4,7 +4,6 @@ import { Link, useHistory } from "react-router-dom";
 import Twemoji from "../components/Twemoji";
 import ArticleCard from "../components/ArticleCard";
 
-import me from "../assets/img/me.jpg";
 import tina from "../assets/img/tina.png";
 import tkssir from "../assets/img/tkssir.png";
 import tmm from "../assets/img/tmm.png";

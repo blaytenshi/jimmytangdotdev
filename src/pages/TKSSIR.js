@@ -7,7 +7,7 @@ const TKSSIR = () => {
   window.scrollTo(0,0);
   
   return (
-    <div className="container mx-auto body-text border-t border-red-500 pt-4">
+    <div className="container mx-auto body-text border-t border-red-500 pt-4 px-6 text-gray-700">
       <ArticleNavBar/>
       <article>
         <h2 className="text-3xl font-bold text-red-600">Going from Paper to Digital</h2>

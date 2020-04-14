@@ -21,7 +21,7 @@ function App() {
       {/*<div className="w-16 h-16 fixed right-0 bg-blue-500"></div>*/}
       <header className="container mx-auto flex justify-center w-full py-8 laptop:justify-around laptop:w-3/5 max-w-screen-laptop">
         <div className="flex flex-col items-center justify-center">
-          <div className="w-64 pt-10 laptop:hidden">
+          <div className="w-64 pt-6 laptop:hidden">
             <img className="rounded-full border border-red-500 p-1" src={me} alt="Jimmy Tang"/>
           </div>
           <h1 className="text-5xl laptop:text-6xl desktop:text-7xl">
@@ -46,13 +46,13 @@ function App() {
         </Switch>
       </main>
       <footer className="bg-red-600 text-white">
-        <div className="flex flex-col items-center container mx-auto justify-between py-8 tablet:px-8 tablet:flex-row laptop:w-3/5 max-w-screen-laptop">
-          <div className="mb-4 tablet:mb-0">© Jimmy Tang 2020</div>
+        <div className="flex flex-col items-center container mx-auto justify-between py-6 tablet:px-8 tablet:flex-row laptop:w-3/5 max-w-screen-laptop">
+          <div className="mb-6 tablet:mb-0">© Jimmy Tang 2020</div>
           <div className="flex items-center">
-            <GmailLogo className="mr-8 h-10 tablet:h-6 social" onClick={() => window.location.href = 'mailto:jimmy.gj.tang@gmail.com'}/>
-            <TwitterLogo className="mr-8 h-10 tablet:h-6 social" onClick={() => window.open('https://twitter.com/thejimmytang')}/>
-            <LinkedInLogo className="mr-8 h-10 tablet:h-6 social" onClick={() => window.open('https://www.linkedin.com/in/jimmygjtang/')}/>
-            <GithubLogo className="h-10 tablet:h-6 social"/>
+            <GmailLogo className="mr-8 h-6 social" onClick={() => window.location.href = 'mailto:jimmy.gj.tang@gmail.com'}/>
+            <TwitterLogo className="mr-8 h-6 social" onClick={() => window.open('https://twitter.com/thejimmytang')}/>
+            <LinkedInLogo className="mr-8 h-6 social" onClick={() => window.open('https://www.linkedin.com/in/jimmygjtang/')}/>
+            <GithubLogo className="h-6 social" onClick={() => window.open('https://github.com/blaytenshi')}/>
           </div>
         </div>
       </footer>
