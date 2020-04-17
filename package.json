@@ -20,7 +20,8 @@
     "eject": "react-scripts eject",
     "build:styles": "postcss src/assets/css/tailwind.css -o src/assets/css/built-styles.css",
     "prebuild": "cross-env NODE_ENV=production npm run build:styles",
-    "prestart": "npm run build:styles"
+    "prestart": "npm run build:styles",
+    "deploy": "npm run build && firebase deploy --only hosting"
   },
   "eslintConfig": {
     "extends": "react-app"
