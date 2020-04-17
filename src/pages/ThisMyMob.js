@@ -1,5 +1,6 @@
 import React from "react";
 import ArticleNavBar from "../components/ArticleNavBar";
+import thismymob from "../assets/img/tmm.png";
 
 const ThisMyMob = () => {
 
@@ -10,22 +11,23 @@ const ThisMyMob = () => {
     <div className="container mx-auto body-text border-t border-red-500 pt-4 px-6 text-gray-700">
       <ArticleNavBar/>
       <article>
-        <h2 className="text-3xl font-bold text-red-600">A Safe Space for Indigenous Australians</h2>
+        <h2>A Safe Space for Indigenous Australians</h2>
+        <img src={thismymob} className="article-hero"/>
         <section>
-          <h3 className="text-2xl font-bold text-gray-700">Background</h3>
-          <p className="py-2">
+          <h4>Background</h4>
+          <p>
             This section is currently in progress! Stay tuned!
           </p>
         </section>
         <section>
-          <h3 className="text-2xl font-bold text-gray-700">Thoughts</h3>
-          <p className="py-2">
+          <h4>Thoughts</h4>
+          <p>
             This section is currently in progress! Stay tuned!
           </p>
         </section>
         <section>
-          <h3 className="text-2xl font-bold text-gray-700">Technology</h3>
-          <p className="py-2">
+          <h4>Technology</h4>
+          <p>
             React, React Route, Redux, Redux-Forms, Firebase, Google Cloud Platform, Firebase Cloud Messaging, Firebase Functions, Semantic UI
           </p>
         </section>

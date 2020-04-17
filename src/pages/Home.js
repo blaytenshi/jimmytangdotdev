@@ -20,7 +20,7 @@ const Home = () => {
 
   return (
     <>
-      <nav className="px-8 pb-4 border-b border-red-500 flex mobile:flex-col tablet:flex-row">
+      <nav className="px-8 pb-4 border-b border-red-500 flex flex-col tablet:flex-row">
         <button className="btn m-2 text-sm w-full" onClick={() => history.push("/originstory")}>ORIGIN STORY</button>
         <button className="btn m-2 text-sm w-full" onClick={() => scrollToRef(myWorkRef)}>MY WORK</button>
         <button className="btn m-2 text-sm w-full" onClick={() => scrollToRef(myLearningRef)}>MY LEARNING</button>

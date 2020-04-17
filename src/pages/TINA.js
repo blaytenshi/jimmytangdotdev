@@ -1,5 +1,6 @@
 import React from "react";
 import ArticleNavBar from "../components/ArticleNavBar";
+import tina from "../assets/img/tina.png";
 
 const TINA = () => {
 
@@ -10,22 +11,23 @@ const TINA = () => {
     <div className="container mx-auto body-text border-t border-red-500 pt-4 px-6 text-gray-700">
       <ArticleNavBar/>
       <article>
-        <h2 className="text-3xl font-bold text-red-600">A Next Generation Superannuation Administration Platform</h2>
-        <section className="py-2">
-          <h3 className="text-2xl font-bold text-gray-700">Background</h3>
-          <p className="py-2">
+        <h2>A Next Generation Superannuation Administration Platform</h2>
+        <img src={tina} className="article-hero" />
+        <section>
+          <h4>Background</h4>
+          <p>
             This section is currently in progress! Stay tuned!
           </p>
         </section>
         <section>
-          <h3 className="text-2xl font-bold text-gray-700">Thoughts</h3>
-          <p className="py-2">
+          <h4>Thoughts</h4>
+          <p>
             This section is currently in progress! Stay tuned!
           </p>
         </section>
         <section>
-          <h3 className="text-2xl font-bold text-gray-700">Technology</h3>
-          <p className="py-2">
+          <h4>Technology</h4>
+          <p>
             Vue, Node.js, Koa, Tailwind CSS, VueX, Vue Router, SCSS, Echarts 
           </p>
         </section>
