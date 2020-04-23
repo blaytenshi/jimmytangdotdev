@@ -34,7 +34,7 @@ const Home = () => {
         <p>
           I&apos;m currently in search of my next role! <Twemoji emoji="👨🏻‍💻"/> If you have a need for an enthusiastic,
           energetic, web developer with a passion for building great user experiences in cross functional and
-          collaborative teams, take a look at my <a href="#" className="text-red-500 underline">resume</a> and come say
+          collaborative teams, take a look at my <a href="#" className="link">resume</a> and come say
           Hi! <Twemoji emoji="👋"/>
         </p>
       </section>
@@ -45,7 +45,7 @@ const Home = () => {
         </h2>
         <div className="py-4 grid tablet:grid-cols-2 gap-2">
           <Link to="/work/tkssir" className="col-span-1">
-            <ArticleCard image={tkssir} description="TK SSIR: Going from Paper to Digital"/>
+            <ArticleCard image={tkssir} description="TK SSIR: Helping reduce alcohol related violence in Sydney"/>
           </Link>
           <Link to="/work/thismymob" className="col-span-1">
             <ArticleCard image={tmm} description="#thisMyMob: A Social Network for Indigenous Australians"/>
@@ -63,6 +63,9 @@ const Home = () => {
         <div className="py-4 grid grid-cols-1 gap-2 tablet:grid-cols-3">
           <Link to="/experiments/personalwebsitev1" className="col-span-1">
             <ArticleCard image={personalwebsite} description="Revisiting CSS and Design after more than a decade" />
+          </Link>
+          <Link to="/learning/ajourneyfrompapertodigital" className="col-span-1">
+            <ArticleCard image={tkssir} description="A Journey from Paper to Digital" />
           </Link>
         </div>
       </section>

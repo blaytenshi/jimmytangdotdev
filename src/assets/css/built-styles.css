@@ -189,10 +189,6 @@ button:-moz-focusring {
  * Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */
 
-progress {
-  vertical-align: baseline;
-}
-
 /**
  * Remove the default vertical scrollbar in IE 10+.
  */
@@ -226,6 +222,10 @@ progress {
 /*
  * Add the correct display in Edge, IE 10+, and Firefox.
  */
+
+details {
+  display: block;
+}
 
 /*
  * Add the correct display in all browsers.
@@ -263,6 +263,7 @@ template {
 
 h1,
 h2,
+h3,
 h4,
 figure,
 p {
@@ -366,8 +367,13 @@ button,
   cursor: pointer;
 }
 
+table {
+  border-collapse: collapse;
+}
+
 h1,
 h2,
+h3,
 h4 {
   font-size: inherit;
   font-weight: inherit;
@@ -471,9 +477,14 @@ body {
   background-color: #f7fafc;
 }
 
-article, section {
+article {
   padding-top: 1rem;
   padding-bottom: 1rem
+}
+
+section {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem
 }
 
 p {
@@ -486,6 +497,12 @@ h2 {
   font-weight: 700;
   color: #e53e3e;
   line-height: 1.25
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #4a5568
 }
 
 h4 {
@@ -590,8 +607,19 @@ ol, ul {
   color: #2d3748
 }
 
-a:hover {
-  text-decoration: none
+.link {
+  color: #f56565;
+  text-decoration: underline;
+  font-weight: 700
+}
+
+.link:hover {
+  text-decoration: none;
+  cursor: pointer
+}
+
+li img {
+  margin-right: 1rem
 }
 
 .bg-white{
@@ -648,6 +676,10 @@ a:hover {
 
 .grid{
   display: grid;
+}
+
+.table{
+  display: table;
 }
 
 .hidden{
@@ -713,10 +745,6 @@ a:hover {
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
-}
-
-.ml-4{
-  margin-left: 1rem;
 }
 
 .mb-6{
@@ -860,10 +888,6 @@ a:hover {
   color: #4a5568;
 }
 
-.text-red-500{
-  color: #f56565;
-}
-
 .text-red-600{
   color: #e53e3e;
 }
@@ -886,10 +910,6 @@ a:hover {
 
 .text-5xl{
   font-size: 3rem;
-}
-
-.underline{
-  text-decoration: underline;
 }
 
 .w-16{

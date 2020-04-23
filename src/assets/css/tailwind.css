@@ -12,8 +12,12 @@ body {
   @apply bg-gray-100;
 }
 
-article, section {
+article {
   @apply py-4
+}
+
+section {
+  @apply py-2
 }
 
 p {
@@ -83,8 +87,16 @@ ol, ul {
   @apply text-lg text-gray-800
 }
 
-a:hover {
-  @apply no-underline
+.link {
+  @apply text-red-500 underline font-bold
+}
+
+.link:hover {
+  @apply no-underline cursor-pointer
+}
+
+li img {
+  @apply mr-4
 }
 
 @tailwind utilities;

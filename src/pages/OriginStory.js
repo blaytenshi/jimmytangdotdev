@@ -45,11 +45,11 @@ const OriginStory = () => {
             Besides my passion in software and technology, I'm also:
           </p>
           <ul>
-            <li><Twemoji emoji="📸"/><span className="ml-4">An avid photographer</span></li>
-            <li><Twemoji emoji="🛫"/><span className="ml-4">An adventurous traveller</span></li>
-            <li><Twemoji emoji="🍽️"/><span className="ml-4">A forever hungry foodie</span></li>
-            <li><Twemoji emoji="🏋️‍♂️"/><span className="ml-4">A fitness junkie</span></li>
-            <li><Twemoji emoji="🎮"/><span className="ml-4">A casual gamer</span></li>
+            <li><Twemoji emoji="📸"/>An avid photographer</li>
+            <li><Twemoji emoji="🛫"/>An adventurous traveller</li>
+            <li><Twemoji emoji="🍽️"/>A forever hungry foodie</li>
+            <li><Twemoji emoji="🏋️‍♂️"/>A fitness junkie</li>
+            <li><Twemoji emoji="🎮"/>A casual gamer</li>
           </ul>
           <p>
             This website is a place for me to tinker with code and maybe a place to hold my thoughts in the future.

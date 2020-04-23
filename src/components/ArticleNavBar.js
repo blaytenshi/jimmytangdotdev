@@ -8,7 +8,7 @@ const ArticleNavBar = () => {
   
   return (
     <div className="py-4">
-      <button className="text-red-500 underline text-xl flex items-center" onClick={() => history.push("/")}>
+      <button className="link text-xl flex items-center" onClick={() => history.push("/")}>
         <Back className="h-6" />
         <span className="pl-2">Home</span>
       </button>
