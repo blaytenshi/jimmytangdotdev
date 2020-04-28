@@ -12,7 +12,7 @@ const ThisMyMob = () => {
       <ArticleNavBar/>
       <article>
         <h2>#thisMyMob: A Social Network for Indigenous Australians</h2>
-        <img src={thismymob} className="article-hero"/>
+        <img src={thismymob} className="article-hero" alt="thisMyMob: A Social Network for Indigenous Australians"/>
         <section>
           <p>
             The #thisMyMob project is a collaborative effort between UTS:Rapido Social and UTS’s own Centre for 

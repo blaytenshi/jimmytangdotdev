@@ -8,6 +8,7 @@ import tina from "../assets/img/tina.png";
 import tkssir from "../assets/img/tkssir.png";
 import tmm from "../assets/img/tmm.png";
 import personalwebsite from "../assets/img/personalwebsite.png";
+import resume from "../assets/files/resume.pdf";
 
 const Home = () => {
 
@@ -34,7 +35,7 @@ const Home = () => {
         <p>
           I&apos;m currently in search of my next role! <Twemoji emoji="👨🏻‍💻"/> If you have a need for an enthusiastic,
           energetic, web developer with a passion for building great user experiences in cross functional and
-          collaborative teams, take a look at my <a href="#" className="link">resume</a> and come say
+          collaborative teams, take a look at my <a href={resume} className="link">resume</a> and come say
           Hi! <Twemoji emoji="👋"/>
         </p>
       </section>

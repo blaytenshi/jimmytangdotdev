@@ -14,7 +14,7 @@ const AJourneyFromPaperToDigital = () => {
       <ArticleNavBar/>
       <article>
         <h2>A Journey from Paper to Digital</h2>
-        <img src={tkssir} className="article-hero" />
+        <img src={tkssir} className="article-hero" alt="A Journey from Paper to Digital" />
         <section>
           <h3>Introduction</h3>
           <p>

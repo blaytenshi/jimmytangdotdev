@@ -14,7 +14,7 @@ const PersonalWebsiteV1 = () => {
       <ArticleNavBar/>
       <article>
         <h2>Revisiting CSS and Design after more than a decade</h2>
-        <img src={personalWebsite} alt="personal website screenshot" className="article-hero"/>
+        <img src={personalWebsite} className="article-hero" alt="personal website screenshot" />
         <section>
           <p>
             After my stint with Grow Super came to an unfortunate end (thanks COVID-19), it was time to saddle up and

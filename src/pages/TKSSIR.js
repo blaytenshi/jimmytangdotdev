@@ -15,7 +15,7 @@ const TKSSIR = () => {
       <ArticleNavBar/>
       <article>
         <h2>TK SSIR: Helping reduce alcohol related violence in Sydney</h2>
-        <img src={tkssir} className="article-hero"/>
+        <img src={tkssir} className="article-hero" alt="TK SSIR: Helping reduce alcohol related violence in Sydney" />
         <section>
           <p>
             The Stay Kind Foundation (then known as the Thomas Kelly Foundation) is a charity foundation that ran a 

@@ -12,7 +12,7 @@ const TINA = () => {
       <ArticleNavBar/>
       <article>
         <h2>A Next Generation Superannuation Administration Platform</h2>
-        <img src={tina} className="article-hero" />
+        <img src={tina} className="article-hero" alt="A Next Generation Superannuation Administration Platform" />
         <section>
           <p>
             Tina is Grow's attempt to revolutionise and disrupt the superannuation industry. The administration platform
