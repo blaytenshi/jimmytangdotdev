@@ -65,7 +65,7 @@ const Home = () => {
           <Link to="/experiments/personalwebsitev1" className="col-span-1">
             <ArticleCard image={personalwebsite} description="Revisiting CSS and Design after more than a decade" />
           </Link>
-          <Link to="/learning/ajourneyfrompapertodigital" className="col-span-1">
+          <Link to="/learnings/ajourneyfrompapertodigital" className="col-span-1">
             <ArticleCard image={tkssir} description="A Journey from Paper to Digital" />
           </Link>
         </div>

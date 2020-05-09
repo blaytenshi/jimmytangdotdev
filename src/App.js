@@ -42,7 +42,7 @@ function App() {
           <Route path="/work/thismymob" component={ThisMyMob} />
           <Route path="/work/tina" component={TINA} />
           <Route path="/experiments/personalwebsitev1" component={PersonalWebsite} />
-          <Route path="/learning/ajourneyfrompapertodigital" component={AJourneyFromPaperToDigital} />
+          <Route path="/learnings/ajourneyfrompapertodigital" component={AJourneyFromPaperToDigital} />
           <Route exact path="/" component={Home} />
           <Route component={NoMatch} />
         </Switch>
