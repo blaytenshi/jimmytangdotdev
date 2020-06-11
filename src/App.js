@@ -42,7 +42,7 @@ function App() {
 
   return (
     <div className={`${darkMode ? "theme-dark" : "theme-light"} border-t-8 border-red-600 min-h-screen font-openSans flex flex-col`}>
-      <button className="w-16 h-16 fixed right-0" onClick={() => handleTheme()}>
+      <button className="w-16 h-16 fixed right-0 border-0 rounded-full" onClick={() => handleTheme()}>
   { darkMode ? <Moon /> : <Sun /> }
       </button>
       <header className="container mx-auto flex justify-center w-full py-8 laptop:justify-around laptop:w-3/5 max-w-screen-laptop">
