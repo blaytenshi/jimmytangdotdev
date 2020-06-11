@@ -8,7 +8,7 @@ const TINA = () => {
   window.scrollTo(0,0);
   
   return (
-    <div className="container mx-auto body-text border-t border-red-500 pt-4 px-6 text-gray-700">
+    <div className="container mx-auto body-text border-t border-red-500 pt-4 px-6">
       <ArticleNavBar/>
       <article>
         <h2>A Next Generation Superannuation Administration Platform</h2>

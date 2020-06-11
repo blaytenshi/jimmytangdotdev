@@ -10,7 +10,7 @@ const PersonalWebsiteV1 = () => {
   window.scrollTo(0, 0);
 
   return (
-    <div className="container mx-auto body-text border-t border-red-500 pt-4 px-6 text-gray-700">
+    <div className="container mx-auto body-text border-t border-red-500 pt-4 px-6">
       <ArticleNavBar/>
       <article>
         <h2>Revisiting CSS and Design after more than a decade</h2>

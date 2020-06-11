@@ -29,7 +29,7 @@ h2 {
 }
 
 h3 {
-  @apply text-2xl font-bold text-gray-700
+  @apply text-2xl font-bold
 }
 
 h4 {
@@ -80,11 +80,11 @@ ol, ul {
 }
 
 .intro-text {
-  @apply text-xl font-bold text-center text-gray-800
+  @apply text-xl font-bold text-center
 }
 
 .body-text {
-  @apply text-lg text-gray-800
+  @apply text-lg
 }
 
 .link {
@@ -97,6 +97,14 @@ ol, ul {
 
 li img {
   @apply mr-4
+}
+
+.theme-light {
+  @apply transition transition-colors duration-700 bg-gray-100 text-gray-700
+}
+
+.theme-dark {
+  @apply transition transition-colors duration-700 bg-gray-900 text-gray-200
 }
 
 @tailwind utilities;
