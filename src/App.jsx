@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { Route, Switch } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Outlet } from "react-router-dom";
 
 import { ReactComponent as GmailLogo } from "./assets/img/gmail.svg";
 import { ReactComponent as TwitterLogo } from "./assets/img/twitter.svg";
@@ -8,15 +8,6 @@ import { ReactComponent as GithubLogo } from "./assets/img/github.svg";
 import { ReactComponent as Sun } from "./assets/img/sun.svg";
 import { ReactComponent as Moon } from "./assets/img/moon.svg";
 import me from "./assets/img/me.jpg";
-
-import TKSSIR from "./pages/TKSSIR";
-import Home from "./pages/Home";
-import OriginStory from "./pages/OriginStory";
-import PersonalWebsite from "./pages/PersonalWebsite";
-import ThisMyMob from "./pages/ThisMyMob";
-import TINA from "./pages/TINA";
-import NoMatch from "./pages/NoMatch";
-import AJourneyFromPaperToDigital from "./pages/AJourneyFromPaperToDigital";
 
 function App() {
 
@@ -43,7 +34,7 @@ function App() {
   return (
     <div className={`${darkMode ? "theme-dark" : "theme-light"} border-t-8 border-red-600 min-h-screen font-openSans flex flex-col`}>
       <button className="w-16 h-16 fixed right-0 border-0 rounded-full" onClick={() => handleTheme()}>
-  { darkMode ? <Moon /> : <Sun /> }
+        { darkMode ? <Moon /> : <Sun /> }
       </button>
       <header className="container mx-auto flex justify-center w-full py-8 laptop:justify-around laptop:w-3/5 max-w-screen-laptop">
         <div className="flex flex-col items-center justify-center">
@@ -61,16 +52,7 @@ function App() {
         </div>
       </header>
       <main className="container mx-auto laptop:w-3/5 max-w-screen-laptop flex-grow">
-        <Switch>
-          <Route path="/originstory" component={OriginStory} />
-          <Route path="/work/tkssir" component={TKSSIR} />
-          <Route path="/work/thismymob" component={ThisMyMob} />
-          <Route path="/work/tina" component={TINA} />
-          <Route path="/experiments/personalwebsitev1" component={PersonalWebsite} />
-          <Route path="/learnings/ajourneyfrompapertodigital" component={AJourneyFromPaperToDigital} />
-          <Route exact path="/" component={Home} />
-          <Route component={NoMatch} />
-        </Switch>
+        <Outlet />
       </main>
       <footer className="bg-red-600 text-white">
         <div className="flex flex-col items-center container mx-auto justify-between py-6 tablet:px-8 tablet:flex-row laptop:w-3/5 max-w-screen-laptop">

@@ -1,6 +1,4 @@
-import React from "react";
-import ArticleNavBar from "../components/ArticleNavBar";
-import Twemoji from "../components/Twemoji";
+import ArticleNavBar from "../components/ArticleNavBar.jsx";
 import personalWebsite from "../assets/img/personalwebsite.png";
 import nuthinbuttime from "../assets/img/nuthinbuttime.gif";
 
@@ -23,7 +21,7 @@ const PersonalWebsiteV1 = () => {
             work and projects. I figured that in order to get noticed more by potential employers and recruiters, (and
             under strong encouragement from various colleagues) it was high time to built my own!
           </p>
-          <p>Now, I consider myself a Front End Engineer... How hard could it be...<Twemoji emoji="🤔"/>?</p>
+          <p>Now, I consider myself a Front End Engineer... How hard could it be... 🤔?</p>
         </section>
         <section>
           <h4>My naivety will be my downfall</h4>
@@ -45,20 +43,20 @@ const PersonalWebsiteV1 = () => {
           <h4>Choosing my stack...</h4>
           <p>
             Whilst at Grow, we were a Vue shop. And although I love Vue for it's structure and simplicity (something
-            I'll get into in another post), React was my first SPA framework and as idiom goes: "You never forget your 
-            first <Twemoji emoji="❤"/>". Besides, Sydney is a React scene so of course it made sense to build my front 
+            I'll get into in another post), React was my first SPA framework and as idiom goes: "You never forget your
+            first ❤. Besides, Sydney is a React scene so of course it made sense to build my front
             end out of React!
           </p>
           <p>
             Hosting and back end were an easy choice too. My experience with Firebase made it the go to solution.
             Deployment through the Firebase CLI is a breeze and hosting is free! I didn't want to have to spin up an
-            AWS instance and set up a whole new infrastructure just for a simple portfolio site because I didn't 
+            AWS instance and set up a whole new infrastructure just for a simple portfolio site because I didn't
             have time to learn it and overkill for such a small project like this.
           </p>
           <p>
             The final piece of the puzzle was of course, CSS and design. At Grow, our fender's team centered around
             TailwindCSS for styling. Tailwind is a brilliant utility-first CSS framework that greatly simplifies the
-            CSS that you have to write. However, when it came to me and my own abilities, this was where I ran into the 
+            CSS that you have to write. However, when it came to me and my own abilities, this was where I ran into the
             two challenges:
           </p>
           <ol>
@@ -66,16 +64,16 @@ const PersonalWebsiteV1 = () => {
             <li><span className="font-bold">b)</span> You should know your CSS, so you know which Tailwind classes to apply</li>
           </ol>
           <p>
-            So the process of designing and building the site was my main challenge. There's nothing like building 
+            So the process of designing and building the site was my main challenge. There's nothing like building
             something from scratch to unveil to yourself where all your own deficiencies are. It's why I love
             greenfield projects.
           </p>
           <p>
-            My initial problem was CSS (shock horror). Crazy right? A front end dev that doesn't know CSS?! Not really, 
-            left over knowledge from halcyon days meant my knowledge was just horribly out of date. And though I had 
-            heard of flex boxes, grids, responsive designs, svgs, etc, I honestly had never had to use them due to the 
-            abundance of CSS Framework libraries out there that can help you kick off a project without meticulously 
-            having to design a dropdown component or a date component from scratch. That or the organisation you're 
+            My initial problem was CSS (shock horror). Crazy right? A front end dev that doesn't know CSS?! Not really,
+            left over knowledge from halcyon days meant my knowledge was just horribly out of date. And though I had
+            heard of flex boxes, grids, responsive designs, svgs, etc, I honestly had never had to use them due to the
+            abundance of CSS Framework libraries out there that can help you kick off a project without meticulously
+            having to design a dropdown component or a date component from scratch. That or the organisation you're
             working for already has a design system in place so you never had to craft your components from scratch.
           </p>
           <p>
@@ -89,13 +87,13 @@ const PersonalWebsiteV1 = () => {
                  alt="Vin Diesel Fast and Furious I got nothing but time"/>
           </div>
           <p>
-            It was frustrating at first, updating my CSS knowledge. I fell into a loop of designing a particular part 
-            of the app, figure out what CSS I'm missing, learn it, find the tailwind equivalent and applying it. Only 
-            to realise either it's not the most effective solution or the page doesn't look right when you view it on a 
+            It was frustrating at first, updating my CSS knowledge. I fell into a loop of designing a particular part
+            of the app, figure out what CSS I'm missing, learn it, find the tailwind equivalent and applying it. Only
+            to realise either it's not the most effective solution or the page doesn't look right when you view it on a
             phone or the colour contrast doesn't work with a11y standards... And you start the process all over again.
           </p>
           <p>
-            But you get better each time you go though that iteration. Knowledge grows. I started looking at tangential 
+            But you get better each time you go though that iteration. Knowledge grows. I started looking at tangential
             stuff like smooth scrolling to sections, CSS transitions, building media queries... all of which made me
             realise: I have terrible design sense.
           </p>
@@ -110,7 +108,7 @@ const PersonalWebsiteV1 = () => {
         <section>
           <h4>Lessons learnt</h4>
           <p>
-            There is no avoiding fundamentals. Whether it be a programming language or good ole CSS. Tailwind did alot 
+            There is no avoiding fundamentals. Whether it be a programming language or good ole CSS. Tailwind did alot
             of heavy lifting this time but you need fundamentals in order to know how to effectively apply tools and
             frameworks that provide abstractions for you.
           </p>
@@ -136,12 +134,12 @@ const PersonalWebsiteV1 = () => {
             strictly technical.
           </p>
           <p>
-            Having said that, the site is still far from done. I've yet to integrate a blogging system, there are still 
-            performance improvements to be had through code-splitting, accessiblity is not great and I'm not entirely 
-            happy with the design of this basic layout. 
+            Having said that, the site is still far from done. I've yet to integrate a blogging system, there are still
+            performance improvements to be had through code-splitting, accessiblity is not great and I'm not entirely
+            happy with the design of this basic layout.
           </p>
           <p>
-            Definitely would love to tinker more with stuff like CSS animations, parallax effects and more interesting 
+            Definitely would love to tinker more with stuff like CSS animations, parallax effects and more interesting
             design elements so stay tuned!
           </p>
         </section>

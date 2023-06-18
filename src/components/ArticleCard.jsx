@@ -1,14 +1,13 @@
-import React, { useState } from "react";
-import PropTypes from "prop-types";
+import { useState } from "react";
 
 const ArticleCard = ({ image, description }) => {
-  
+
   const [ hovered, setHovered ] = useState(false);
   const toggleHover = () => setHovered(!hovered);
-  
+
   return (
-    <div 
-      className="relative w-full overflow-hidden" 
+    <div
+      className="relative w-full overflow-hidden"
       onMouseEnter={toggleHover}
       onMouseLeave={toggleHover}
     >
@@ -18,11 +17,6 @@ const ArticleCard = ({ image, description }) => {
       </div>
     </div>
   )
-};
-
-ArticleCard.propTypes = {
-  image: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired
 };
 
 export default ArticleCard;

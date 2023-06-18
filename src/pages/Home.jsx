@@ -1,8 +1,7 @@
-import React, { useRef } from "react";
-import { Link, useHistory } from "react-router-dom";
+import { useRef } from "react";
+import { Link, useNavigate } from "react-router-dom";
 
-import Twemoji from "../components/Twemoji";
-import ArticleCard from "../components/ArticleCard";
+import ArticleCard from "../components/ArticleCard.jsx";
 
 import tina from "../assets/img/tina.png";
 import tkssir from "../assets/img/tkssir.png";
@@ -12,7 +11,7 @@ import resume from "../assets/files/resume.pdf";
 
 const Home = () => {
 
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
 
@@ -22,21 +21,21 @@ const Home = () => {
   return (
     <>
       <nav className="px-8 pb-4 border-b border-red-500 flex flex-col tablet:flex-row">
-        <button className="btn m-2 text-sm w-full" onClick={() => history.push("/originstory")}>ORIGIN STORY</button>
+        <button className="btn m-2 text-sm w-full" onClick={() => navigate("/originstory")}>ORIGIN STORY</button>
         <button className="btn m-2 text-sm w-full" onClick={() => scrollToRef(myWorkRef)}>MY WORK</button>
         <button className="btn m-2 text-sm w-full" onClick={() => scrollToRef(myLearningRef)}>MY LEARNING</button>
       </nav>
       <section className="px-8 py-12 border-b border-red-500 intro-text">
         <p className="pb-8">
-          Hi! My name is Jimmy and I&apos;m a software developer from Sydney, Australia. I currently specialise in Front End
+          Hi! My name is Jimmy and I'm a software developer from Sydney, Australia. I currently specialise in Front End
           Web Development but also have a variety of experience in all areas of software development from Product Design
           to API Integrations.
         </p>
         <p>
-          I&apos;m currently in search of my next role! <Twemoji emoji="👨🏻‍💻"/> If you have a need for an enthusiastic,
+          I'm currently in search of my next role! 👨🏻‍💻 If you have a need for an enthusiastic,
           energetic, web developer with a passion for building great user experiences in cross functional and
           collaborative teams, take a look at my <a href={resume} className="link">resume</a> and come say
-          Hi! <Twemoji emoji="👋"/>
+          Hi! 👋
         </p>
       </section>
       <section className="px-8 py-12 border-b border-red-500" ref={myWorkRef}>

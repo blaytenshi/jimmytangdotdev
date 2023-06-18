@@ -1,13 +1,11 @@
-import React from "react";
-import PictureCarousel from "../components/PictureCarousel";
-import Twemoji from "../components/Twemoji";
-import ArticleNavBar from "../components/ArticleNavBar";
+import PictureCarousel from "../components/PictureCarousel.jsx";
+import ArticleNavBar from "../components/ArticleNavBar.jsx";
 
 const OriginStory = () => {
-  
+
   // Scroll yo'self back to the top if you scrolled down in the previous screen
   window.scrollTo(0,0);
-  
+
   return (
     <div className="container mx-auto body-text border-t border-red-500 pt-4 px-6">
       <ArticleNavBar/>
@@ -45,11 +43,11 @@ const OriginStory = () => {
             Besides my passion in software and technology, I'm also:
           </p>
           <ul>
-            <li><Twemoji emoji="📸"/>An avid photographer</li>
-            <li><Twemoji emoji="🛫"/>An adventurous traveller</li>
-            <li><Twemoji emoji="🍽️"/>A forever hungry foodie</li>
-            <li><Twemoji emoji="🏋️‍♂️"/>A fitness junkie</li>
-            <li><Twemoji emoji="🎮"/>A casual gamer</li>
+            <li>📸 An avid photographer</li>
+            <li>🛫 An adventurous traveller</li>
+            <li>🍽️ A forever hungry foodie</li>
+            <li>🏋️‍♂️ A fitness junkie</li>
+            <li>🎮 A casual gamer</li>
           </ul>
           <p>
             This website is a place for me to tinker with code and maybe a place to hold my thoughts in the future.
