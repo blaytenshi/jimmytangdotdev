@@ -10,6 +10,7 @@ import PersonalWebsite from "./pages/PersonalWebsite.jsx";
 import AJourneyFromPaperToDigital from "./pages/AJourneyFromPaperToDigital.jsx";
 import Home from "./pages/Home.jsx";
 import NoMatch from "./pages/NoMatch.jsx";
+import GlobalStyle from "./components/GlobalStyles.js";
 
 const router = createBrowserRouter([
   {
@@ -51,6 +52,7 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <GlobalStyle />
     <RouterProvider router={router}>
       <App />
     </RouterProvider>
