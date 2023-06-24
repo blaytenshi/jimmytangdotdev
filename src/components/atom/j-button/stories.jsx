@@ -16,7 +16,12 @@ export default {
   }
 };
 
-export const Default = {}
+export const Default = {
+  args: {
+    $capitalize: false,
+    $fullWidth: false,
+  }
+}
 
 export const CaplitalisedFullWidthButton = {
   args: {
