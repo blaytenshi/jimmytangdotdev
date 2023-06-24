@@ -8,7 +8,8 @@ const StyledButton = styled.button`
   padding: 0.75rem 0.5rem;
   border-radius: 0.5rem;
   font-family: 'Open Sans', sans-serif;
-  text-transform: ${props => props.capitalize ? 'uppercase' : 'none' };
+  text-transform: ${props => props.$capitalize ? 'uppercase' : 'none' };
+  width: ${props => props.$fullWidth ? '100%' : 'auto' };
   &:hover {
     cursor: pointer;
     background-color: #8c0909;
