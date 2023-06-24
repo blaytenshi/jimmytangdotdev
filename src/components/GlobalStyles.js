@@ -5,6 +5,7 @@ const GlobalStyles = createGlobalStyle`
   
   html {
     scroll-behavior: smooth;
+    font-family: 'Open Sans', sans-serif;
   }
   
   body {

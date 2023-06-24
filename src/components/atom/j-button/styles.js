@@ -7,12 +7,13 @@ const StyledButton = styled.button`
   appearance: none;
   padding: 0.75rem 0.5rem;
   border-radius: 0.5rem;
-  font-family: 'Open Sans', sans-serif;
   text-transform: ${props => props.$capitalize ? 'uppercase' : 'none' };
   width: ${props => props.$fullWidth ? '100%' : 'auto' };
+  transition: transform 0.3s cubic-bezier(.4,0,.2,1);
   &:hover {
     cursor: pointer;
     background-color: #8c0909;
+    transform: translateY(-0.25rem);
   }
 `
 
