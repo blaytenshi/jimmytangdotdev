@@ -1,9 +1,5 @@
 import { styled } from 'styled-components';
-
-const headingSize = {
-  h1: '5rem',
-  h2: '1.875rem',
-}
+import { fontSize } from "../../../utils/font-size.js";
 
 const headingWeight = {
   h1: 600,
@@ -16,7 +12,7 @@ const letterSpacing = {
 }
 
 const StyledHeading = styled.div`
-  font-size: ${({ type }) => headingSize[type]};
+  font-size: ${({ type }) => fontSize[type]};
   font-weight: ${({ type }) => headingWeight[type]};
   letter-spacing: ${({ type }) => letterSpacing[type]};
 `

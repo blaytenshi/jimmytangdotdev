@@ -65,6 +65,14 @@ const GlobalStyles = createGlobalStyle`
     font-style: italic;
   }
   
+  * {
+    margin: 0;
+    padding: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    box-sizing: border-box;
+  }
+  
   html {
     scroll-behavior: smooth;
     font-family: 'Open Sans', sans-serif;
@@ -73,6 +81,17 @@ const GlobalStyles = createGlobalStyle`
   body {
     margin: 0;
     box-sizing: border-box;
+  }
+  
+  h1,
+  h2 {
+    margin: 0;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
   }
 `
 
