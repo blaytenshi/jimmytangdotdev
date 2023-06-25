@@ -6,13 +6,19 @@ const headingSize = {
 }
 
 const headingWeight = {
-  h1: 800,
-  h2: 700,
+  h1: 600,
+  h2: 600,
+}
+
+const letterSpacing = {
+  h1: '-0.25rem',
+  h2: '-0.1rem',
 }
 
 const StyledHeading = styled.div`
   font-size: ${({ type }) => headingSize[type]};
   font-weight: ${({ type }) => headingWeight[type]};
+  letter-spacing: ${({ type }) => letterSpacing[type]};
 `
 
 export const StyledFirstWord = styled.span`
