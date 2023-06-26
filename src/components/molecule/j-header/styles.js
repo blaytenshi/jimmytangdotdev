@@ -1,5 +1,5 @@
 import { styled } from 'styled-components';
-import {fontSize} from "../../../utils/font-size.js";
+import { getTheme } from "../../../utils/index.js";
 
 const StyledHeader = styled.header`
   display: flex;
@@ -16,8 +16,8 @@ export const StyledHeadingTextWrapper = styled.div`
 `
 
 export const StyledSubheader = styled.p`
-  font-size: ${fontSize["subtitle"]};
-  color: #1a202c;
+  font-size: ${getTheme("fontSize", "header", "subtitle")};
+  color: ${getTheme("colors", "header", "subheader")};
 `
 
 export const StyledDisplayPictureWrapper = styled.div`

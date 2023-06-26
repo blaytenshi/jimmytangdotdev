@@ -1,9 +1,10 @@
 import styled from 'styled-components';
+import { getTheme } from "../../../utils/index.js";
 
 const StyledButton = styled.button`
-  background-color: #a11616;
-  border: 1px solid #922424;
-  color: #e8e6e3;
+  background-color: ${getTheme("colors", "button", "backgroundColor")};
+  border: 1px solid ${getTheme("colors", "button", "border" )};
+  color: ${getTheme("colors", "button", "text")};
   appearance: none;
   padding: 0.75rem 0.5rem;
   border-radius: 0.5rem;
@@ -12,7 +13,7 @@ const StyledButton = styled.button`
   transition: transform 0.3s cubic-bezier(.4,0,.2,1);
   &:hover {
     cursor: pointer;
-    background-color: #8c0909;
+    background-color: ${getTheme("colors", "button", "backgroundColorHover")};
     transform: translateY(-0.25rem);
   }
 `

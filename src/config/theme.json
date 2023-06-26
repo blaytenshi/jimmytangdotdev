@@ -1,0 +1,46 @@
+{
+  "blaze": {
+    "fontSize": {
+      "header": {
+        "h1": "5rem",
+        "h2": "1.875rem",
+        "subtitle": "1.875rem"
+      }
+    },
+    "fontWeight": {
+      "header": {
+        "h1": 600,
+        "h2": 600
+      }
+    },
+    "letterSpacing": {
+      "header": {
+        "h1": "-0.25rem",
+        "h2": "-0.1rem"
+      }
+    },
+    "colors": {
+      "header": {
+        "firstWord": "#e74b4b",
+        "secondWord": "#d56b6b",
+        "subheader": "#1a202c"
+      },
+      "button": {
+        "backgroundColor": "#a11616",
+        "backgroundColorHover": "#8c0909",
+        "border": "#922424",
+        "text": "#e8e6e3"
+      },
+      "footer": {
+        "backgroundColor": "#a11616",
+        "text": "#e8e6e3"
+      },
+      "hr": {
+        "lineColor": "#8e0909"
+      },
+      "displayPicture": {
+        "border": "#922424"
+      }
+    }
+  }
+}
