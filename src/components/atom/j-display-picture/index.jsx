@@ -1,9 +1,8 @@
-import me from "../../../assets/img/me.jpg";
 import StyledDisplayPicture from './styles.js';
 
-const JDisplayPicture = () => {
+const JDisplayPicture = ({ image }) => {
   return (
-    <StyledDisplayPicture src={me} />
+    <StyledDisplayPicture src={image} />
   )
 }
 
