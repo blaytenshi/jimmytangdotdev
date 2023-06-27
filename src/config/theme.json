@@ -40,6 +40,11 @@
       },
       "displayPicture": {
         "border": "#922424"
+      },
+      "articleCard": {
+        "backgroundColor": "#000",
+        "textHovered": "#e53e3e",
+        "text": "#e8e6e3"
       }
     }
   }
