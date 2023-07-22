@@ -5,10 +5,17 @@ export default {
   component: JFooter,
   tags: ['autodocs'],
   argTypes: {
-    year: {control: 'number', description: 'Copyright year'}
+    year: { control: 'number', description: 'Copyright year' },
+    socials: { control: 'object', description: 'List of social objects' }
   },
   args: {
-    year: 2023
+    year: 2023,
+    socials: [
+      { name: 'gmail' },
+      { name: 'twitter' },
+      { name: 'linkedin' },
+      { name: 'github' },
+    ]
   }
 }
 

@@ -1,8 +1,7 @@
 import { useNavigate } from "react-router-dom";
-import { ReactComponent as Back } from "../assets/img/back.svg";
+import { ReactComponent as Back } from "../assets/icons/back.svg";
 
 const ArticleNavBar = () => {
-
   const navigate = useNavigate();
 
   return (

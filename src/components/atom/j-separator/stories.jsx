@@ -1,7 +1,7 @@
 import JSeparator from "./index.jsx";
 
 export default {
-  title: "Atom/JSeparator",
+  title: "Atoms/JSeparator",
   component: JSeparator,
   tags: ['autodocs'],
 };
