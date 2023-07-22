@@ -1,5 +1,7 @@
 import { withThemeFromJSXProvider } from '@storybook/addon-styling';
 import GlobalStyles from "../src/components/GlobalStyles.js";
+import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
+
 /** @type { import('@storybook/react').Preview } */
 const preview = {
   parameters: {
@@ -10,6 +12,10 @@ const preview = {
         date: /Date$/,
       },
     },
+    viewport: {
+      viewports: INITIAL_VIEWPORTS,
+      defaultViewport: 'responsive'
+    }
   },
 };
 
