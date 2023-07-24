@@ -3,26 +3,21 @@ import theme from '../config/theme.json';
 
 <Meta title="Colors" />
 
-export const { blaze: { reference: { color }} } = theme;
+export const { blaze: { reference: { colors }} } = theme;
 
 # Colors
 
 ## Blaze
-Below is a list of colours used by the Design system for the Blaze Theme
+Below is a list of colours used by the Design System for the Blaze Theme
 <ColorPalette>
-  <ColorItem
-    title="reds"
-    subtitle="Reds"
-    colors={color}
-  />
   {
-    Object.entries(color).map(([colorName, colorValue]) => {
+    Object.entries(colors).map(([ colorName, colorObject ]) => {
       return (
         <ColorItem
           key={colorName}
-          title={colorName}
+          title={`blaze.colors.${colorName}`}
           subtitle={colorName}
-          colors={{ [colorName]: colorValue }}
+          colors={colorObject}
         />
       )
     })
