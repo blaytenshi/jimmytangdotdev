@@ -1,7 +1,7 @@
 {
   "blaze": {
     "reference": {
-      "sizes": {
+      "spacing": {
         "px2": "0.125rem",
         "px4": "0.25rem",
         "px6": "0.75rem",
@@ -17,7 +17,24 @@
         "px36": "2.25rem",
         "px40": "2.5rem",
         "px44": "2.75rem",
-        "px48": "3rem"
+        "px48": "3rem",
+        "px56": "3.5rem",
+        "px64": "4rem",
+        "px80": "5rem",
+        "px96": "6rem",
+        "px112": "7rem",
+        "px128": "8rem",
+        "px144": "9rem",
+        "px160": "10rem",
+        "px176": "11rem",
+        "px192": "12rem",
+        "px208": "13rem",
+        "px224": "14rem",
+        "px240": "15rem",
+        "px256": "16rem",
+        "px288": "18rem",
+        "px320": "20rem",
+        "px384": "24rem"
       },
       "colors": {
         "red": {

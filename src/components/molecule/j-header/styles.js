@@ -31,7 +31,11 @@ export const StyledSubheader = styled.p`
 `
 
 export const StyledDisplayPictureWrapper = styled.div`
-  width: 12rem;
+  width: 16rem;
+  
+  @media screen and (min-width: ${MIN_MEDIA_BREAKPOINTS.PX_768}) {
+    width: 12rem;
+  }
 `
 
 export default StyledHeader;
