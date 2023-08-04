@@ -40,9 +40,10 @@
         "red": {
           "red-900": "#8c0909",
           "red-800": "#922424",
-          "red-700": "#a11616",
-          "red-600": "#e53e3e",
-          "red-500": "#d56b6b"
+          "red-600": "#941414",
+          "red-500": "#a11616",
+          "red-400": "#e53e3e",
+          "red-300": "#d56b6b"
         },
         "grey": {
           "grey-900": "#000",
@@ -70,6 +71,9 @@
       }
     },
     "colors": {
+      "topHeader": {
+        "backgroundColor": "#a11616"
+      },
       "header": {
         "firstWord": "#e74b4b",
         "secondWord": "#d56b6b",

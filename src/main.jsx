@@ -14,12 +14,11 @@ import GlobalStyle from "./components/GlobalStyles.js";
 
 const router = createBrowserRouter([
   {
-    path: "/",
     element: <App/>,
     errorElement: <NoMatch/>,
     children: [
       {
-        path: "",
+        path: "/",
         element: <Home/>
       },
       {

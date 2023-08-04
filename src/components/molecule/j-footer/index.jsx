@@ -1,12 +1,11 @@
-import StyledFooter, {StyledCopyrightText, StyledSocialsWrapper} from './styles.js';
-import JIcon from "../../atom/j-icon/index.jsx";
+import StyledFooter, { StyledCopyrightText, StyledSocialsWrapper } from './styles.js';
 
-const JFooter = ({ year, socials }) => {
+const JFooter = ({ year, children }) => {
   return (
     <StyledFooter>
       <StyledCopyrightText>© Jimmy Tang {year}</StyledCopyrightText>
       <StyledSocialsWrapper>
-        { socials?.map(({ name }) => <JIcon key={name} name={name} />)}
+        { children }
       </StyledSocialsWrapper>
     </StyledFooter>
   )

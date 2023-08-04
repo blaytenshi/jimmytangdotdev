@@ -1,4 +1,5 @@
 import JFooter from './index.jsx';
+import JIcon from "../../atom/j-icon/index.jsx";
 
 export default {
   title: 'Molecules/JFooter',
@@ -6,17 +7,21 @@ export default {
   tags: ['autodocs'],
   argTypes: {
     year: { control: 'number', description: 'Copyright year' },
-    socials: { control: 'object', description: 'List of social objects' }
   },
   args: {
     year: 2023,
-    socials: [
-      { name: 'gmail' },
-      { name: 'twitter' },
-      { name: 'linkedin' },
-      { name: 'github' },
-    ]
   }
 }
 
 export const Default = {}
+
+export const FooterWithIcons = {
+  render: (args) => (
+    <JFooter year="2023">
+      <JIcon name="gmail" />
+      <JIcon name="twitter" />
+      <JIcon name="linkedin" />
+      <JIcon name="github" />
+    </JFooter>
+  )
+}
