@@ -1,0 +1,82 @@
+[
+  {
+    "path": "/",
+    "layout": "SingleColumnLayout",
+    "areas": {
+      "main": [
+        {
+          "name": "HeroBanner"
+        },
+        {
+          "name": "Home"
+        }
+      ]
+    }
+  },
+  {
+    "path": "/originstory",
+    "layout": "SingleColumnLayout",
+    "areas": {
+      "main": [
+        {
+          "name": "OriginStory"
+        }
+      ]
+    }
+  },
+  {
+    "path": "/work/tkssir",
+    "layout": "SingleColumnLayout",
+    "areas": {
+      "main": [
+        {
+          "name": "TKSSIR"
+        }
+      ]
+    }
+  },
+  {
+    "path": "/work/thismymob",
+    "layout": "SingleColumnLayout",
+    "areas": {
+      "main": [
+        {
+          "name": "ThisMyMob"
+        }
+      ]
+    }
+  },
+  {
+    "path": "/work/tina",
+    "layout": "SingleColumnLayout",
+    "areas": {
+      "main": [
+        {
+          "name": "TINA"
+        }
+      ]
+    }
+  },
+  {
+    "path": "/experiments/personalwebsitev1",
+    "layout": "SingleColumnLayout",
+    "areas": {
+      "main": [
+        {
+          "name": "PersonalWebSite"
+        }
+      ]
+    }
+  },
+  {
+    "path": "/learnings/ajourneyfrompapertodigital",
+    "layout": "SingleColumnLayout",
+    "areas": {
+      "main": [
+        {
+          "name": "AJourneyFromPaperToDigital"
+        }
+      ]
+    }
+  }
+]
