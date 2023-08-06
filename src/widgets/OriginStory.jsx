@@ -1,5 +1,7 @@
 import PictureCarousel from "../components/PictureCarousel.jsx";
 import ArticleNavBar from "../components/ArticleNavBar.jsx";
+import JHeading from "../components/atom/j-heading/index.jsx";
+import {HEADING_SIZES} from "../utils/constants.js";
 
 const OriginStory = () => {
 
@@ -10,10 +12,7 @@ const OriginStory = () => {
     <div className="container mx-auto body-text border-t border-red-500 pt-4 px-6">
       <ArticleNavBar/>
       <article>
-        <h2 className="text-3xl">
-          <span className="font-extrabold text-red-600">Origin</span>
-          <span className="font-bold text-red-800">Story</span>
-        </h2>
+        <JHeading type={HEADING_SIZES.H2} firstWord="Origin" secondWord="Story" />
         <section>
           <p>
             I’ve always been fascinated with computers as a child. From gaming to the Internet. Having been exposed to

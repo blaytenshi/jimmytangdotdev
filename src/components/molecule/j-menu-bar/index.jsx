@@ -1,12 +1,12 @@
 import JButton from "../../atom/j-button/index.jsx";
 import StyledMenuBar from "./styles.js";
 
-const JMenuBar = () => {
+const JMenuBar = ({ navigateOriginStory, navigateMyWork, navigateMyLearning }) => {
   return (
     <StyledMenuBar>
-      <JButton label="Origin Story" $capitalize $fullWidth />
-      <JButton label="My Work" $capitalize $fullWidth />
-      <JButton label="My Learning" $capitalize $fullWidth />
+      <JButton label="Origin Story" $capitalize $fullWidth onClick={navigateOriginStory} />
+      <JButton label="My Work" $capitalize $fullWidth onClick={navigateMyWork} />
+      <JButton label="My Learning" $capitalize $fullWidth onClick={navigateMyLearning} />
     </StyledMenuBar>
   )
 }

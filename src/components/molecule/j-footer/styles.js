@@ -7,6 +7,8 @@ const StyledFooter = styled.footer`
   padding: 1.5rem 2rem;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
+  max-width: 992px;
 `;
 
 export const StyledCopyrightText = styled.p`

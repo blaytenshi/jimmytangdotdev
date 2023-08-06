@@ -2,6 +2,7 @@
   "blaze": {
     "reference": {
       "spacing": {
+        "px1": "0.0625rem",
         "px2": "0.125rem",
         "px4": "0.25rem",
         "px6": "0.75rem",
@@ -72,28 +73,28 @@
     },
     "colors": {
       "topHeader": {
-        "backgroundColor": "#a11616"
+        "backgroundColor": "#e53e3e"
       },
       "header": {
-        "firstWord": "#e74b4b",
-        "secondWord": "#d56b6b",
-        "subheader": "#1a202c"
+        "firstWord": "#e53e3e",
+        "secondWord": "#9b2c2c",
+        "subheader": "#4a5568"
       },
       "button": {
-        "backgroundColor": "#a11616",
-        "backgroundColorHover": "#8c0909",
-        "border": "#922424",
-        "text": "#e8e6e3"
+        "backgroundColor": "#e53e3e",
+        "backgroundColorHover": "#f56565",
+        "border": "#c53030",
+        "text": "#fff"
       },
       "footer": {
-        "backgroundColor": "#a11616",
+        "backgroundColor": "#e53e3e",
         "text": "#e8e6e3"
       },
       "hr": {
-        "lineColor": "#8e0909"
+        "lineColor": "#f56565"
       },
       "displayPicture": {
-        "border": "#922424"
+        "border": "#f56565"
       },
       "articleCard": {
         "backgroundColor": "#000",

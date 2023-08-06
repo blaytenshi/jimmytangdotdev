@@ -1,30 +1,44 @@
 import { useRef } from "react";
-import { Link, useNavigate } from "react-router-dom";
-
-import ArticleCard from "../components/ArticleCard.jsx";
+import { useNavigate } from "react-router-dom";
 
 import tina from "../assets/img/tina.png";
 import tkssir from "../assets/img/tkssir.png";
 import tmm from "../assets/img/tmm.png";
 import personalwebsite from "../assets/img/personalwebsite.png";
 import resume from "../assets/files/resume.pdf";
+import JHeading from "../components/atom/j-heading/index.jsx";
+import { HEADING_SIZES } from "../utils/constants.js";
+import JMenuBar from "../components/molecule/j-menu-bar/index.jsx";
+import JSeparator from "../components/atom/j-separator/index.jsx";
+import JArticleCard from "../components/molecule/j-article-card/index.jsx";
 
 const Home = () => {
 
   const navigate = useNavigate();
-
-  const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
-
   const myWorkRef = useRef(null);
   const myLearningRef = useRef(null);
+  const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
+
+  const navigateTo = (route) => {
+    return navigate(route);
+  }
+
+  const scrollTo = (ref) => {
+    return scrollToRef(ref);
+  }
+
+  const toggleArticleCardHover = (target) => {
+    console.log('target', target);
+  }
 
   return (
     <>
-      <nav className="px-8 pb-4 border-b border-red-500 flex flex-col tablet:flex-row">
-        <button className="btn m-2 text-sm w-full" onClick={() => navigate("/originstory")}>ORIGIN STORY</button>
-        <button className="btn m-2 text-sm w-full" onClick={() => scrollToRef(myWorkRef)}>MY WORK</button>
-        <button className="btn m-2 text-sm w-full" onClick={() => scrollToRef(myLearningRef)}>MY LEARNING</button>
-      </nav>
+      <JMenuBar
+        navigateOriginStory={() => navigateTo("/originstory")}
+        navigateMyLearning={() => scrollTo(myLearningRef)}
+        navigateMyWork={() => scrollTo(myWorkRef)}
+      />
+      <JSeparator />
       <section className="px-8 py-12 border-b border-red-500 intro-text">
         <p className="pb-8">
           Hi! My name is Jimmy and I'm a software developer from Sydney, Australia. I currently specialise in Front End
@@ -38,35 +52,45 @@ const Home = () => {
           Hi! 👋
         </p>
       </section>
+      <JSeparator />
       <section className="px-8 py-12 border-b border-red-500" ref={myWorkRef}>
-        <h2 className="text-3xl">
-          <span className="font-extrabold text-red-600">My</span>
-          <span className="font-bold text-red-800">Work</span>
-        </h2>
+        <JHeading type={HEADING_SIZES.H2} firstWord="My" secondWord="Work" />
         <div className="py-4 grid tablet:grid-cols-2 gap-2">
-          <Link to="/work/tkssir" className="col-span-1">
-            <ArticleCard image={tkssir} description="TK SSIR: Helping reduce alcohol related violence in Sydney"/>
-          </Link>
-          <Link to="/work/thismymob" className="col-span-1">
-            <ArticleCard image={tmm} description="#thisMyMob: A Social Network for Indigenous Australians"/>
-          </Link>
-          <Link to="/work/tina" className="col-span-1 tablet:col-span-2">
-            <ArticleCard image={tina} description="Tina: A Next Gen Superannuation Admin Platform"/>
-          </Link>
+          <JArticleCard
+            image={tkssir}
+            description="TK SSIR: Helping reduce alcohol related violence in Sydney"
+            toggleHover={(target) => toggleArticleCardHover(target)}
+            onClick={() => navigateTo("/work/tkssir")}
+          />
+          <JArticleCard
+            image={tmm}
+            description="#thisMyMob: A Social Network for Indigenous Australians"
+            toggleHover={(target) => toggleArticleCardHover(target)}
+            onClick={() => navigateTo("/work/thismymob")}
+          />
+          <JArticleCard
+            image={tina}
+            description="Tina: A Next Gen Superannuation Admin Platform"
+            toggleHover={(target) => toggleArticleCardHover(target)}
+            onClick={() => navigateTo("/work/tina")}
+          />
         </div>
       </section>
       <section className="px-8 py-12" ref={myLearningRef}>
-        <h2 className="text-3xl">
-          <span className="font-extrabold text-red-600">My</span>
-          <span className="font-bold text-red-800">Learning</span>
-        </h2>
+        <JHeading type={HEADING_SIZES.H2} firstWord="My" secondWord="Learning" />
         <div className="py-4 grid grid-cols-1 gap-2 tablet:grid-cols-3">
-          <Link to="/experiments/personalwebsitev1" className="col-span-1">
-            <ArticleCard image={personalwebsite} description="Revisiting CSS and Design after more than a decade" />
-          </Link>
-          <Link to="/learnings/ajourneyfrompapertodigital" className="col-span-1">
-            <ArticleCard image={tkssir} description="A Journey from Paper to Digital" />
-          </Link>
+          <JArticleCard
+            image={personalwebsite}
+            description="Tina: A Next Gen Superannuation Admin Platform"
+            toggleHover={(target) => toggleArticleCardHover(target)}
+            onClick={() => navigateTo("/experiments/personalwebsitev1")}
+          />
+          <JArticleCard
+            image={tkssir}
+            description="Tina: A Next Gen Superannuation Admin Platform"
+            toggleHover={(target) => toggleArticleCardHover(target)}
+            onClick={() => navigateTo("/learnings/ajourneyfrompapertodigital")}
+          />
         </div>
       </section>
     </>

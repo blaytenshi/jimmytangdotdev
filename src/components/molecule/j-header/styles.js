@@ -6,6 +6,7 @@ const StyledHeader = styled.header`
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
+  padding: 2rem;
 
   @media screen and (min-width: ${MIN_MEDIA_BREAKPOINTS.PX_768}) {
     justify-content: space-around;

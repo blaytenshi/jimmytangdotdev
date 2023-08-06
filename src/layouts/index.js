@@ -1,4 +1,4 @@
-import SingleColumnLayout from './single-column.jsx';
+import SingleColumnLayout from './single-column/index.jsx';
 
 export default {
   SingleColumnLayout

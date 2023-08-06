@@ -3,7 +3,7 @@ import { getTheme } from "../../../utils/index.js";
 import { MIN_MEDIA_BREAKPOINTS } from "../../../utils/constants.js";
 
 const StyledHeading = styled.div`
-  font-size: 4rem;
+  font-size: ${({ type }) => getTheme("fontSize", "header", type)};;
   font-weight: ${({ type }) => getTheme("fontWeight", "header", type)};
   letter-spacing: ${({ type }) => getTheme("letterSpacing", "header", type)};
   
