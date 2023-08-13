@@ -1,4 +1,4 @@
-import Carousel from "@brainhubeu/react-carousel";
+import Carousel from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
 
 import bondi from '../assets/img/bondi.jpg';
@@ -54,7 +54,7 @@ const PictureCarousel = () => {
         <img className="rounded-lg" src={truffles} alt="home made truffle pasta dish at pyrmont sydney" />
       </div>
     </Carousel>
-  )
-}
+  );
+};
 
 export default PictureCarousel;

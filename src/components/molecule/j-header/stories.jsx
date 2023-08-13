@@ -1,9 +1,9 @@
-import JHeader from "./index.jsx";
+import JHeader from './index.jsx';
 
 export default {
-  title: "Molecules/JHeader",
+  title: 'Molecules/JHeader',
   component: JHeader,
   tags: ['autodocs'],
-}
+};
 
-export const Default = {}
+export const Default = {};

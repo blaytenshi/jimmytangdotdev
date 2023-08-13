@@ -1,17 +1,16 @@
-import ArticleNavBar from "../components/ArticleNavBar.jsx";
-import tina from "../assets/img/tina.png";
+import ArticleNavBar from '../components/ArticleNavBar.jsx';
+import tinaImg from '../assets/img/tina.png';
 
-const TINA = () => {
-
+const tina = () => {
   // Scroll yo'self back to the top if you scrolled down in the previous screen
-  window.scrollTo(0,0);
+  window.scrollTo(0, 0);
 
   return (
     <div className="container mx-auto body-text border-t border-red-500 pt-4 px-6">
       <ArticleNavBar/>
       <article>
         <h2>A Next Generation Superannuation Administration Platform</h2>
-        <img src={tina} className="article-hero" alt="A Next Generation Superannuation Administration Platform" />
+        <img src={tinaImg} className="article-hero" alt="A Next Generation Superannuation Administration Platform" />
         <section>
           <p>
             Tina is Grow's attempt to revolutionise and disrupt the superannuation industry. The administration platform
@@ -37,7 +36,7 @@ const TINA = () => {
         </section>
       </article>
     </div>
-  )
+  );
 };
 
-export default TINA;
+export default tina;

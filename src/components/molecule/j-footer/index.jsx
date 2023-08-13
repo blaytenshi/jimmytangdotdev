@@ -1,6 +1,6 @@
-import StyledFooter, { StyledCopyrightText, StyledSocialsWrapper } from './styles.js';
+import StyledFooter, {StyledCopyrightText, StyledSocialsWrapper} from './styles.js';
 
-const JFooter = ({ year, children }) => {
+const JFooter = ({year, children}) => {
   return (
     <StyledFooter>
       <StyledCopyrightText>© Jimmy Tang {year}</StyledCopyrightText>
@@ -8,7 +8,7 @@ const JFooter = ({ year, children }) => {
         { children }
       </StyledSocialsWrapper>
     </StyledFooter>
-  )
-}
+  );
+};
 
 export default JFooter;

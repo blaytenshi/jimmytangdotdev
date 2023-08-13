@@ -1,19 +1,18 @@
-import { useRef } from "react";
-import { useNavigate } from "react-router-dom";
+import {useRef} from 'react';
+import {useNavigate} from 'react-router-dom';
 
-import tina from "../assets/img/tina.png";
-import tkssir from "../assets/img/tkssir.png";
-import tmm from "../assets/img/tmm.png";
-import personalwebsite from "../assets/img/personalwebsite.png";
-import resume from "../assets/files/resume.pdf";
-import JHeading from "../components/atom/j-heading/index.jsx";
-import { HEADING_SIZES } from "../utils/constants.js";
-import JMenuBar from "../components/molecule/j-menu-bar/index.jsx";
-import JSeparator from "../components/atom/j-separator/index.jsx";
-import JArticleCard from "../components/molecule/j-article-card/index.jsx";
+import tina from '../assets/img/tina.png';
+import tkssir from '../assets/img/tkssir.png';
+import tmm from '../assets/img/tmm.png';
+import personalwebsite from '../assets/img/personalwebsite.png';
+import resume from '../assets/files/resume.pdf';
+import JHeading from '../components/atom/j-heading/index.jsx';
+import {HEADING_SIZES} from '../utils/constants.js';
+import JMenuBar from '../components/molecule/j-menu-bar/index.jsx';
+import JSeparator from '../components/atom/j-separator/index.jsx';
+import JArticleCard from '../components/molecule/j-article-card/index.jsx';
 
 const Home = () => {
-
   const navigate = useNavigate();
   const myWorkRef = useRef(null);
   const myLearningRef = useRef(null);
@@ -21,20 +20,20 @@ const Home = () => {
 
   const navigateTo = (route) => {
     return navigate(route);
-  }
+  };
 
   const scrollTo = (ref) => {
     return scrollToRef(ref);
-  }
+  };
 
   const toggleArticleCardHover = (target) => {
     console.log('target', target);
-  }
+  };
 
   return (
     <>
       <JMenuBar
-        navigateOriginStory={() => navigateTo("/originstory")}
+        navigateOriginStory={() => navigateTo('/originstory')}
         navigateMyLearning={() => scrollTo(myLearningRef)}
         navigateMyWork={() => scrollTo(myWorkRef)}
       />
@@ -60,19 +59,19 @@ const Home = () => {
             image={tkssir}
             description="TK SSIR: Helping reduce alcohol related violence in Sydney"
             toggleHover={(target) => toggleArticleCardHover(target)}
-            onClick={() => navigateTo("/work/tkssir")}
+            onClick={() => navigateTo('/work/tkssir')}
           />
           <JArticleCard
             image={tmm}
             description="#thisMyMob: A Social Network for Indigenous Australians"
             toggleHover={(target) => toggleArticleCardHover(target)}
-            onClick={() => navigateTo("/work/thismymob")}
+            onClick={() => navigateTo('/work/thismymob')}
           />
           <JArticleCard
             image={tina}
             description="Tina: A Next Gen Superannuation Admin Platform"
             toggleHover={(target) => toggleArticleCardHover(target)}
-            onClick={() => navigateTo("/work/tina")}
+            onClick={() => navigateTo('/work/tina')}
           />
         </div>
       </section>
@@ -83,18 +82,18 @@ const Home = () => {
             image={personalwebsite}
             description="Tina: A Next Gen Superannuation Admin Platform"
             toggleHover={(target) => toggleArticleCardHover(target)}
-            onClick={() => navigateTo("/experiments/personalwebsitev1")}
+            onClick={() => navigateTo('/experiments/personalwebsitev1')}
           />
           <JArticleCard
             image={tkssir}
             description="Tina: A Next Gen Superannuation Admin Platform"
             toggleHover={(target) => toggleArticleCardHover(target)}
-            onClick={() => navigateTo("/learnings/ajourneyfrompapertodigital")}
+            onClick={() => navigateTo('/learnings/ajourneyfrompapertodigital')}
           />
         </div>
       </section>
     </>
-  )
+  );
 };
 
 export default Home;

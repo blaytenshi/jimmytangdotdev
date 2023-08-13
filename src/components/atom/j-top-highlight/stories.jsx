@@ -1,9 +1,9 @@
-import JTopHighlight from "./index.jsx";
+import JTopHighlight from './index.jsx';
 
 export default {
-  title: "Atoms/JTopHighlight",
+  title: 'Atoms/JTopHighlight',
   component: JTopHighlight,
   tags: ['autodocs'],
 };
 
-export const Default = {}
+export const Default = {};

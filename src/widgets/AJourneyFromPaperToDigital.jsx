@@ -1,11 +1,10 @@
-import { Link } from "react-router-dom";
+import {Link} from 'react-router-dom';
 
-import ArticleNavBar from "../components/ArticleNavBar.jsx";
-import tkssir from "../assets/img/tkssir.png";
+import ArticleNavBar from '../components/ArticleNavBar.jsx';
+import tkssir from '../assets/img/tkssir.png';
 
 const AJourneyFromPaperToDigital = () => {
-
-  window.scrollTo(0,0);
+  window.scrollTo(0, 0);
 
   return (
     <div className="container mx-auto body-text border-t border-red-500 pt-4 px-6">
@@ -65,7 +64,7 @@ const AJourneyFromPaperToDigital = () => {
             </p>
           </section>
           <section>
-          <h4>Understanding Your Users</h4>
+            <h4>Understanding Your Users</h4>
             <p>
               After laying the groundwork for the new version of SSIR and bringing forward much of the existing
               functionality of the original app, I showed the new version to the team leader of the Take Kare program at
@@ -98,7 +97,7 @@ const AJourneyFromPaperToDigital = () => {
         </section>
       </article>
     </div>
-  )
+  );
 };
 
 export default AJourneyFromPaperToDigital;

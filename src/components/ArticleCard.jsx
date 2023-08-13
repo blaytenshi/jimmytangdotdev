@@ -1,8 +1,7 @@
-import { useState } from "react";
+import {useState} from 'react';
 
-const ArticleCard = ({ image, description }) => {
-
-  const [ hovered, setHovered ] = useState(false);
+const ArticleCard = ({image, description}) => {
+  const [hovered, setHovered] = useState(false);
   const toggleHover = () => setHovered(!hovered);
 
   return (
@@ -16,7 +15,7 @@ const ArticleCard = ({ image, description }) => {
         <p className={`px-4 py-2 font-bold ${hovered ? 'text-red-600' : 'text-black'}`}>{description}</p>
       </div>
     </div>
-  )
+  );
 };
 
 export default ArticleCard;

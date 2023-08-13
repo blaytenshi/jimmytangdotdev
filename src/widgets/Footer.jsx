@@ -1,5 +1,5 @@
-import JFooter from "../components/molecule/j-footer/index.jsx";
-import JIcon from "../components/atom/j-icon/index.jsx";
+import JFooter from '../components/molecule/j-footer/index.jsx';
+import JIcon from '../components/atom/j-icon/index.jsx';
 
 const Footer = () => {
   return (
@@ -9,7 +9,7 @@ const Footer = () => {
       <JIcon name="linkedin" />
       <JIcon name="github" />
     </JFooter>
-  )
-}
+  );
+};
 
 export default Footer;

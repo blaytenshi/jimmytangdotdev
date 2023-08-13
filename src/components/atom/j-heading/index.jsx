@@ -1,6 +1,6 @@
 import StyledHeading, {StyledFirstWord, StyledSecondWord} from './styles.js';
 
-const JHeading = ({ type, firstWord, secondWord }) => {
+const JHeading = ({type, firstWord, secondWord}) => {
   return (
     <StyledHeading
       as={type}
@@ -9,7 +9,7 @@ const JHeading = ({ type, firstWord, secondWord }) => {
       <StyledFirstWord>{firstWord}</StyledFirstWord>
       <StyledSecondWord>{secondWord}</StyledSecondWord>
     </StyledHeading>
-  )
-}
+  );
+};
 
 export default JHeading;

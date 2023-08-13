@@ -1,5 +1,5 @@
-import { styled } from 'styled-components';
-import { MIN_MEDIA_BREAKPOINTS } from "../../../utils/constants.js";
+import {styled} from 'styled-components';
+import {MIN_MEDIA_BREAKPOINTS} from '../../../utils/constants.js';
 
 const StyledMenuBar = styled.nav`
   display: flex;
@@ -11,6 +11,6 @@ const StyledMenuBar = styled.nav`
     column-gap: 0.5rem;
     padding: 1rem 2rem;
   }
-`
+`;
 
 export default StyledMenuBar;

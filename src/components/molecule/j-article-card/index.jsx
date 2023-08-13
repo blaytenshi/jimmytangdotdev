@@ -1,10 +1,10 @@
 import StyledArticleCardWrapper, {
   StyledArticleCardImage,
   StyledArticleCardDescriptionWrapper,
-  StyledArticleCardDescription
-} from "./styles.js";
+  StyledArticleCardDescription,
+} from './styles.js';
 
-const JArticleCard = ({ toggleHover, isHovered, image, description, onClick }) => {
+const JArticleCard = ({toggleHover, isHovered, image, description, onClick}) => {
   return (
     <StyledArticleCardWrapper
       onMouseEnter={toggleHover}
@@ -16,7 +16,7 @@ const JArticleCard = ({ toggleHover, isHovered, image, description, onClick }) =
         <StyledArticleCardDescription isHovered={isHovered}>{description}</StyledArticleCardDescription>
       </StyledArticleCardDescriptionWrapper>
     </StyledArticleCardWrapper>
-  )
-}
+  );
+};
 
 export default JArticleCard;

@@ -1,9 +1,8 @@
-import ArticleNavBar from "../components/ArticleNavBar.jsx";
-import personalWebsite from "../assets/img/personalwebsite.png";
-import nuthinbuttime from "../assets/img/nuthinbuttime.gif";
+import ArticleNavBar from '../components/ArticleNavBar.jsx';
+import personalWebsite from '../assets/img/personalwebsite.png';
+import nuthinbuttime from '../assets/img/nuthinbuttime.gif';
 
 const PersonalWebsiteV1 = () => {
-
   // Scroll yo'self back to the top if you scrolled down in the previous screen
   window.scrollTo(0, 0);
 
@@ -84,7 +83,7 @@ const PersonalWebsiteV1 = () => {
           <h4>A seemingly endless process...</h4>
           <div className="py-4">
             <img src={nuthinbuttime} className="block mx-auto"
-                 alt="Vin Diesel Fast and Furious I got nothing but time"/>
+              alt="Vin Diesel Fast and Furious I got nothing but time"/>
           </div>
           <p>
             It was frustrating at first, updating my CSS knowledge. I fell into a loop of designing a particular part
@@ -151,7 +150,7 @@ const PersonalWebsiteV1 = () => {
         </section>
       </article>
     </div>
-  )
+  );
 };
 
 export default PersonalWebsiteV1;

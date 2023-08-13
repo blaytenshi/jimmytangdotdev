@@ -1,12 +1,12 @@
-import { createGlobalStyle } from "styled-components";
-import OpenSansRegular from "../assets/fonts/OpenSans-Regular.ttf";
-import OpenSansItalic from "../assets/fonts/OpenSans-Italic.ttf";
-import OpenSansSemiBold from "../assets/fonts/OpenSans-SemiBold.ttf";
-import OpenSansSemiBoldItalic from "../assets/fonts/OpenSans-SemiBoldItalic.ttf";
-import OpenSansBold from "../assets/fonts/OpenSans-Bold.ttf";
-import OpenSansBoldItalic from "../assets/fonts/OpenSans-BoldItalic.ttf";
-import OpenSansExtraBold from "../assets/fonts/OpenSans-ExtraBold.ttf";
-import OpenSansExtraBoldItalic from "../assets/fonts/OpenSans-BoldItalic.ttf";
+import {createGlobalStyle} from 'styled-components';
+import OpenSansRegular from '../assets/fonts/OpenSans-Regular.ttf';
+import OpenSansItalic from '../assets/fonts/OpenSans-Italic.ttf';
+import OpenSansSemiBold from '../assets/fonts/OpenSans-SemiBold.ttf';
+import OpenSansSemiBoldItalic from '../assets/fonts/OpenSans-SemiBoldItalic.ttf';
+import OpenSansBold from '../assets/fonts/OpenSans-Bold.ttf';
+import OpenSansBoldItalic from '../assets/fonts/OpenSans-BoldItalic.ttf';
+import OpenSansExtraBold from '../assets/fonts/OpenSans-ExtraBold.ttf';
+import OpenSansExtraBoldItalic from '../assets/fonts/OpenSans-BoldItalic.ttf';
 
 const GlobalStyles = createGlobalStyle`
   @font-face {
@@ -93,6 +93,6 @@ const GlobalStyles = createGlobalStyle`
     max-width: 100%;
     height: auto;
   }
-`
+`;
 
 export default GlobalStyles;

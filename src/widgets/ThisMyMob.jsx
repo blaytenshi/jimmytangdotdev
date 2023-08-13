@@ -1,9 +1,8 @@
-import ArticleNavBar from "../components/ArticleNavBar.jsx";
-import thismymob from "../assets/img/tmm.png";
+import ArticleNavBar from '../components/ArticleNavBar.jsx';
+import thismymob from '../assets/img/tmm.png';
 
 const ThisMyMob = () => {
-
-  window.scrollTo(0,0);
+  window.scrollTo(0, 0);
 
   return (
     <div className="container mx-auto body-text border-t border-red-500 pt-4 px-6">
@@ -79,7 +78,7 @@ const ThisMyMob = () => {
         </section>
       </article>
     </div>
-  )
+  );
 };
 
 export default ThisMyMob;

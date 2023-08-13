@@ -4,7 +4,7 @@ const routeFactory = (routes) => {
   const builtRoutes = routes.reduce((accRoutes, currentRoute) => {
     accRoutes.push({
       path: currentRoute.path,
-      element: layoutFactory(currentRoute.layout, currentRoute.areas)
+      element: layoutFactory(currentRoute.layout, currentRoute.areas),
     });
 
     return accRoutes;

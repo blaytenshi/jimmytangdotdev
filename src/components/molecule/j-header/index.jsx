@@ -1,7 +1,7 @@
-import JHeading from "../../atom/j-heading/index.jsx";
-import JDisplayPicture from "../../atom/j-display-picture/index.jsx";
-import StyledHeader, { StyledSubheader, StyledHeadingTextWrapper, StyledDisplayPictureWrapper } from "./styles.js";
-import {HEADING_SIZES} from "../../../utils/constants.js";
+import JHeading from '../../atom/j-heading/index.jsx';
+import JDisplayPicture from '../../atom/j-display-picture/index.jsx';
+import StyledHeader, {StyledSubheader, StyledHeadingTextWrapper, StyledDisplayPictureWrapper} from './styles.js';
+import {HEADING_SIZES} from '../../../utils/constants.js';
 import image from '../../../assets/img/me.jpg';
 
 const JHeader = () => {
@@ -15,7 +15,7 @@ const JHeader = () => {
         <JDisplayPicture image={image}/>
       </StyledDisplayPictureWrapper>
     </StyledHeader>
-  )
-}
+  );
+};
 
 export default JHeader;

@@ -1,6 +1,6 @@
-import { styled } from 'styled-components';
-import { getTheme } from "../../../utils/index.js";
-import { MIN_MEDIA_BREAKPOINTS } from "../../../utils/constants.js";
+import {styled} from 'styled-components';
+import {getTheme} from '../../../utils/index.js';
+import {MIN_MEDIA_BREAKPOINTS} from '../../../utils/constants.js';
 
 const StyledHeader = styled.header`
   display: flex;
@@ -12,7 +12,7 @@ const StyledHeader = styled.header`
     justify-content: space-around;
     flex-direction: row;
   }
-`
+`;
 
 export const StyledHeadingTextWrapper = styled.div`
   display: flex;
@@ -20,16 +20,16 @@ export const StyledHeadingTextWrapper = styled.div`
   justify-content: center;
   align-items: center;
   row-gap: 0.5rem;
-`
+`;
 
 export const StyledSubheader = styled.p`
   font-size: 1.5rem;
-  color: ${getTheme("colors", "header", "subheader")};
+  color: ${getTheme('colors', 'header', 'subheader')};
   
   @media screen and (min-width: ${MIN_MEDIA_BREAKPOINTS.PX_768}) {
-    font-size: ${getTheme("fontSize", "header", "subtitle")};
+    font-size: ${getTheme('fontSize', 'header', 'subtitle')};
   }
-`
+`;
 
 export const StyledDisplayPictureWrapper = styled.div`
   width: 16rem;
@@ -37,6 +37,6 @@ export const StyledDisplayPictureWrapper = styled.div`
   @media screen and (min-width: ${MIN_MEDIA_BREAKPOINTS.PX_768}) {
     width: 12rem;
   }
-`
+`;
 
 export default StyledHeader;

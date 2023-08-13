@@ -1,19 +1,18 @@
-import { Link } from "react-router-dom";
+import {Link} from 'react-router-dom';
 
-import ArticleNavBar from "../components/ArticleNavBar.jsx";
-import tkssir from "../assets/img/tkssir.png";
+import ArticleNavBar from '../components/ArticleNavBar.jsx';
+import tkssirImg from '../assets/img/tkssir.png';
 
-const TKSSIR = () => {
-
+const tkssir = () => {
   // Scroll yo'self back to the top if you scrolled down in the previous screen
-  window.scrollTo(0,0);
+  window.scrollTo(0, 0);
 
   return (
     <div className="container mx-auto body-text border-t border-red-500 pt-4 px-6">
       <ArticleNavBar/>
       <article>
         <h2>TK SSIR: Helping reduce alcohol related violence in Sydney</h2>
-        <img src={tkssir} className="article-hero" alt="TK SSIR: Helping reduce alcohol related violence in Sydney" />
+        <img src={tkssirImg} className="article-hero" alt="TK SSIR: Helping reduce alcohol related violence in Sydney" />
         <section>
           <p>
             The Stay Kind Foundation (then known as the Thomas Kelly Foundation) is a charity foundation that ran a
@@ -66,7 +65,7 @@ const TKSSIR = () => {
         </section>
       </article>
     </div>
-  )
+  );
 };
 
-export default TKSSIR;
+export default tkssir;
