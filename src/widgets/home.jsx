@@ -10,7 +10,7 @@ import JHeading from '../components/atom/j-heading/index.jsx';
 import { HEADING_SIZES } from '../utils/constants.js';
 import JMenuBar from '../components/molecule/j-menu-bar/index.jsx';
 import JSeparator from '../components/atom/j-separator/index.jsx';
-import JArticleCard from '../components/molecule/j-article-card/index.jsx';
+import SmartArticleCard from '../smart-component/smart-article-card/index.jsx';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -24,10 +24,6 @@ const Home = () => {
 
   const scrollTo = (ref) => {
     return scrollToRef(ref);
-  };
-
-  const toggleArticleCardHover = (target) => {
-    console.log('target', target);
   };
 
   return (
@@ -55,40 +51,35 @@ const Home = () => {
       <section className="px-8 py-12 border-b border-red-500" ref={myWorkRef}>
         <JHeading type={HEADING_SIZES.H2} firstWord="My" secondWord="Work" />
         <div className="py-4 grid tablet:grid-cols-2 gap-2">
-          <JArticleCard
+          <SmartArticleCard
             image={tkssir}
             description="TK SSIR: Helping reduce alcohol related violence in Sydney"
-            toggleHover={(target) => toggleArticleCardHover(target)}
-            onClick={() => navigateTo('/work/tkssir')}
+            handleClick={() => navigateTo('/work/tkssir')}
           />
-          <JArticleCard
+          <SmartArticleCard
             image={tmm}
             description="#thisMyMob: A Social Network for Indigenous Australians"
-            toggleHover={(target) => toggleArticleCardHover(target)}
-            onClick={() => navigateTo('/work/thismymob')}
+            handleClick={() => navigateTo('/work/thismymob')}
           />
-          <JArticleCard
+          <SmartArticleCard
             image={tina}
             description="Tina: A Next Gen Superannuation Admin Platform"
-            toggleHover={(target) => toggleArticleCardHover(target)}
-            onClick={() => navigateTo('/work/tina')}
+            handleClick={() => navigateTo('/work/tina')}
           />
         </div>
       </section>
       <section className="px-8 py-12" ref={myLearningRef}>
         <JHeading type={HEADING_SIZES.H2} firstWord="My" secondWord="Learning" />
         <div className="py-4 grid grid-cols-1 gap-2 tablet:grid-cols-3">
-          <JArticleCard
+          <SmartArticleCard
             image={personalwebsite}
             description="Tina: A Next Gen Superannuation Admin Platform"
-            toggleHover={(target) => toggleArticleCardHover(target)}
-            onClick={() => navigateTo('/experiments/personalwebsitev1')}
+            handleClick={() => navigateTo('/experiments/personalwebsitev1')}
           />
-          <JArticleCard
+          <SmartArticleCard
             image={tkssir}
             description="Tina: A Next Gen Superannuation Admin Platform"
-            toggleHover={(target) => toggleArticleCardHover(target)}
-            onClick={() => navigateTo('/learnings/ajourneyfrompapertodigital')}
+            handleClick={() => navigateTo('/learnings/ajourneyfrompapertodigital')}
           />
         </div>
       </section>

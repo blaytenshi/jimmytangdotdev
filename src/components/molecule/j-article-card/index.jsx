@@ -11,9 +11,9 @@ const JArticleCard = ({ toggleHover, isHovered, image, description, onClick }) =
       onMouseLeave={toggleHover}
       onClick={onClick}
     >
-      <StyledArticleCardImage src={image} alt={description} isHovered={isHovered} />
-      <StyledArticleCardDescriptionWrapper isHovered={isHovered}>
-        <StyledArticleCardDescription isHovered={isHovered}>{description}</StyledArticleCardDescription>
+      <StyledArticleCardImage src={image} alt={description} $isHovered={isHovered} />
+      <StyledArticleCardDescriptionWrapper $isHovered={isHovered}>
+        <StyledArticleCardDescription $isHovered={isHovered}>{description}</StyledArticleCardDescription>
       </StyledArticleCardDescriptionWrapper>
     </StyledArticleCardWrapper>
   );
