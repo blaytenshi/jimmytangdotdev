@@ -1,16 +1,16 @@
-import AJourneyFromPaperToDigital from './AJourneyFromPaperToDigital.jsx';
-import Footer from './Footer.jsx';
-import HeroBanner from './HeroBanner.jsx';
-import Home from './Home.jsx';
-import NoMatch from './NoMatch.jsx';
-import OriginStory from './OriginStory.jsx';
-import PersonalWebsite from './PersonalWebsite.jsx';
-import ThisMyMob from './ThisMyMob.jsx';
-import tina from './tina.jsx';
-import tkssir from './tkssir.jsx';
+import JourneyFromPaperToDigital from './journey-from-paper-to-digital.jsx';
+import Footer from './footer.jsx';
+import HeroBanner from './hero-banner.jsx';
+import Home from './home.jsx';
+import NoMatch from './no-match.jsx';
+import OriginStory from './origin-story.jsx';
+import PersonalWebsite from './personal-website.jsx';
+import ThisMyMob from './this-my-mob.jsx';
+import Tina from './tina.jsx';
+import Tkssir from './tkssir.jsx';
 
 export default {
-  AJourneyFromPaperToDigital,
+  JourneyFromPaperToDigital,
   Footer,
   HeroBanner,
   Home,
@@ -18,6 +18,6 @@ export default {
   OriginStory,
   PersonalWebsite,
   ThisMyMob,
-  TINA: tina,
-  tkssir,
+  Tina,
+  Tkssir,
 };

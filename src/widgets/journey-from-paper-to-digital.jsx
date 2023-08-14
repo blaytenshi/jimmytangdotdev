@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import ArticleNavBar from '../components/ArticleNavBar.jsx';
 import tkssir from '../assets/img/tkssir.png';
 
-const AJourneyFromPaperToDigital = () => {
+const JourneyFromPaperToDigital = () => {
   window.scrollTo(0, 0);
 
   return (
@@ -100,4 +100,4 @@ const AJourneyFromPaperToDigital = () => {
   );
 };
 
-export default AJourneyFromPaperToDigital;
+export default JourneyFromPaperToDigital;

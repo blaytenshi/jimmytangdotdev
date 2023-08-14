@@ -1,5 +1,5 @@
 import JTopHighlight from '../../components/atom/j-top-highlight/index.jsx';
-import Footer from '../../widgets/Footer.jsx';
+import Footer from '../../widgets/footer.jsx';
 import StyledSingleColumnLayout, { StyledContainerWrapper, StyledFooterWrapper } from './styles.js';
 
 const SingleColumnLayout = ({ main: Main }) => {
