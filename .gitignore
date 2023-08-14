@@ -34,3 +34,6 @@ yarn-error.log*
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+# stories that came with storybook
+/src/stories/*
