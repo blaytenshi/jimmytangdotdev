@@ -1,7 +1,7 @@
 import PictureCarousel from '../components/PictureCarousel.jsx';
 import ArticleNavBar from '../components/ArticleNavBar.jsx';
 import JHeading from '../components/atom/j-heading/index.jsx';
-import {HEADING_SIZES} from '../utils/constants.js';
+import { HEADING_SIZES } from '../utils/constants.js';
 
 const OriginStory = () => {
   // Scroll yo'self back to the top if you scrolled down in the previous screen

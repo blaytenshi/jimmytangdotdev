@@ -1,5 +1,5 @@
-import {styled} from 'styled-components';
-import {getTheme} from '../../../utils/index.js';
+import { styled } from 'styled-components';
+import { getTheme } from '../../../utils/index.js';
 
 const StyledDisplayPicture = styled.img`
   border: 1px solid ${getTheme('colors', 'displayPicture', 'border' )};

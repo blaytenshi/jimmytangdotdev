@@ -4,7 +4,7 @@ import testImage from '../../../assets/img/tina.png';
 export default {
   title: 'Molecules/JArticleCard',
   component: JArticleCard,
-  tags: ['autodocs'],
+  tags: [ 'autodocs' ],
   argTypes: {
     onClick: {
       action: 'clicked',

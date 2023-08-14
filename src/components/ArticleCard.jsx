@@ -1,7 +1,7 @@
-import {useState} from 'react';
+import { useState } from 'react';
 
-const ArticleCard = ({image, description}) => {
-  const [hovered, setHovered] = useState(false);
+const ArticleCard = ({ image, description }) => {
+  const [ hovered, setHovered ] = useState(false);
   const toggleHover = () => setHovered(!hovered);
 
   return (

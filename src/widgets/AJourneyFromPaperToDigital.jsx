@@ -1,4 +1,4 @@
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import ArticleNavBar from '../components/ArticleNavBar.jsx';
 import tkssir from '../assets/img/tkssir.png';

@@ -1,6 +1,6 @@
-import {styled} from 'styled-components';
-import {getTheme} from '../../../utils/index.js';
-import {MIN_MEDIA_BREAKPOINTS} from '../../../utils/constants.js';
+import { styled } from 'styled-components';
+import { getTheme } from '../../../utils/index.js';
+import { MIN_MEDIA_BREAKPOINTS } from '../../../utils/constants.js';
 
 const StyledHeader = styled.header`
   display: flex;

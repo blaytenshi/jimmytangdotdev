@@ -1,10 +1,10 @@
 import JIcon from './index.jsx';
-import {ICON_MAP, ICON} from '../../../utils/constants.js';
+import { ICON_MAP, ICON } from '../../../utils/constants.js';
 
 export default {
   title: 'Molecules/JIcon',
   component: JIcon,
-  tags: ['autodocs'],
+  tags: [ 'autodocs' ],
   parameters: {
     docs: {
       description: {

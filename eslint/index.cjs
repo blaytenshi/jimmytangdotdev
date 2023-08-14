@@ -186,7 +186,7 @@ module.exports = {
     // http://eslint.org/docs/rules/#stylistic-issues
     // ----------------------------------------------
     'array-bracket-newline': 'off', // eslint:recommended
-    'array-bracket-spacing': ['error', 'never'],
+    'array-bracket-spacing': ['error', 'always'],
     'array-element-newline': 'off', // eslint:recommended
     'block-spacing': ['error', 'never'],
     'brace-style': 'error',
@@ -272,7 +272,7 @@ module.exports = {
     // 'no-whitespace-before-property': 'off',
     // 'nonblock-statement-body-position': 'off',
     // 'object-curly-newline': 'off',
-    'object-curly-spacing': 'error',
+    'object-curly-spacing': ['error', 'always'],
     // 'object-property-newline': 'off',
     'one-var': ['error', {
       var: 'never',

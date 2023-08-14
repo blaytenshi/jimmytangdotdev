@@ -1,4 +1,4 @@
-import {createBrowserRouter} from 'react-router-dom';
+import { createBrowserRouter } from 'react-router-dom';
 
 import pagesConfig from '../config/pages.json';
 import routeFactory from '../utils/route-factory.js';

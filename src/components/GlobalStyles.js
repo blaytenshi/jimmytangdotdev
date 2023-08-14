@@ -1,4 +1,4 @@
-import {createGlobalStyle} from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 import OpenSansRegular from '../assets/fonts/OpenSans-Regular.ttf';
 import OpenSansItalic from '../assets/fonts/OpenSans-Italic.ttf';
 import OpenSansSemiBold from '../assets/fonts/OpenSans-SemiBold.ttf';

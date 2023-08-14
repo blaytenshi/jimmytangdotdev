@@ -1,6 +1,6 @@
-import StyledHeading, {StyledFirstWord, StyledSecondWord} from './styles.js';
+import StyledHeading, { StyledFirstWord, StyledSecondWord } from './styles.js';
 
-const JHeading = ({type, firstWord, secondWord}) => {
+const JHeading = ({ type, firstWord, secondWord }) => {
   return (
     <StyledHeading
       as={type}

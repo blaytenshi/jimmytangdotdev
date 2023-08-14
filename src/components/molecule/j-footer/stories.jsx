@@ -4,9 +4,9 @@ import JIcon from '../../atom/j-icon/index.jsx';
 export default {
   title: 'Molecules/JFooter',
   component: JFooter,
-  tags: ['autodocs'],
+  tags: [ 'autodocs' ],
   argTypes: {
-    year: {control: 'number', description: 'Copyright year'},
+    year: { control: 'number', description: 'Copyright year' },
   },
   args: {
     year: 2023,

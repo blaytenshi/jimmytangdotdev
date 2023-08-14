@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {getTheme} from '../../../utils/index.js';
+import { getTheme } from '../../../utils/index.js';
 
 const StyledButton = styled.button`
   background-color: ${getTheme('colors', 'button', 'backgroundColor')};

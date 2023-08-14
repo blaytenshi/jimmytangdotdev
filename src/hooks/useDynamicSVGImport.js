@@ -1,12 +1,12 @@
-import {useRef, useEffect, useState} from 'react';
-import {ICON_MAP} from '../utils/constants.js';
+import { useRef, useEffect, useState } from 'react';
+import { ICON_MAP } from '../utils/constants.js';
 
 export default function useDynamicSVGImport(name, options = {}) {
   const ImportIconRef = useRef();
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState();
+  const [ loading, setLoading ] = useState(false);
+  const [ error, setError ] = useState();
 
-  const {onCompleted, onError} = options;
+  const { onCompleted, onError } = options;
 
   const verifyIconName = (name) => {
     if (!Object.values(ICON_MAP).includes(name)) {
@@ -35,7 +35,7 @@ export default function useDynamicSVGImport(name, options = {}) {
       }
     };
     importIcon();
-  }, [name, onCompleted, onError]);
+  }, [ name, onCompleted, onError ]);
 
-  return {error, loading, SvgIcon: ImportIconRef.current};
+  return { error, loading, SvgIcon: ImportIconRef.current };
 }

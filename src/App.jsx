@@ -1,16 +1,16 @@
-import {useEffect, useState} from 'react';
-import {Outlet} from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { Outlet } from 'react-router-dom';
 
-import {ReactComponent as GmailLogo} from './assets/icons/gmail.svg';
-import {ReactComponent as TwitterLogo} from './assets/icons/twitter.svg';
-import {ReactComponent as LinkedInLogo} from './assets/icons/linkedin.svg';
-import {ReactComponent as GithubLogo} from './assets/icons/github.svg';
-import {ReactComponent as Sun} from './assets/img/sun.svg';
-import {ReactComponent as Moon} from './assets/img/moon.svg';
+import { ReactComponent as GmailLogo } from './assets/icons/gmail.svg';
+import { ReactComponent as TwitterLogo } from './assets/icons/twitter.svg';
+import { ReactComponent as LinkedInLogo } from './assets/icons/linkedin.svg';
+import { ReactComponent as GithubLogo } from './assets/icons/github.svg';
+import { ReactComponent as Sun } from './assets/img/sun.svg';
+import { ReactComponent as Moon } from './assets/img/moon.svg';
 import me from './assets/img/me.jpg';
 
 function App() {
-  const [darkMode, setDarkMode] = useState(null);
+  const [ darkMode, setDarkMode ] = useState(null);
 
   useEffect(() => {
     // check whether browser supports color-scheme checking

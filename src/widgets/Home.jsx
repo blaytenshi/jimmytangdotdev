@@ -1,5 +1,5 @@
-import {useRef} from 'react';
-import {useNavigate} from 'react-router-dom';
+import { useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 import tina from '../assets/img/tina.png';
 import tkssir from '../assets/img/tkssir.png';
@@ -7,7 +7,7 @@ import tmm from '../assets/img/tmm.png';
 import personalwebsite from '../assets/img/personalwebsite.png';
 import resume from '../assets/files/resume.pdf';
 import JHeading from '../components/atom/j-heading/index.jsx';
-import {HEADING_SIZES} from '../utils/constants.js';
+import { HEADING_SIZES } from '../utils/constants.js';
 import JMenuBar from '../components/molecule/j-menu-bar/index.jsx';
 import JSeparator from '../components/atom/j-separator/index.jsx';
 import JArticleCard from '../components/molecule/j-article-card/index.jsx';

@@ -3,7 +3,7 @@ import JHeading from './index.jsx';
 export default {
   title: 'Atoms/JHeading',
   component: JHeading,
-  tags: ['autodocs'],
+  tags: [ 'autodocs' ],
   argTypes: {
     type: {
       control: 'select',
@@ -16,8 +16,8 @@ export default {
       },
       description: 'What level of Heading element',
     },
-    firstWord: {control: 'text', description: 'The first word in the heading element'},
-    secondWord: {control: 'text', description: 'The second word in the heading element'},
+    firstWord: { control: 'text', description: 'The first word in the heading element' },
+    secondWord: { control: 'text', description: 'The second word in the heading element' },
   },
   args: {
     type: 'h1',

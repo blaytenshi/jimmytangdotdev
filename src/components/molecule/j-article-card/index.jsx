@@ -4,7 +4,7 @@ import StyledArticleCardWrapper, {
   StyledArticleCardDescription,
 } from './styles.js';
 
-const JArticleCard = ({toggleHover, isHovered, image, description, onClick}) => {
+const JArticleCard = ({ toggleHover, isHovered, image, description, onClick }) => {
   return (
     <StyledArticleCardWrapper
       onMouseEnter={toggleHover}
