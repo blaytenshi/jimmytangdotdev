@@ -8,7 +8,16 @@
           "name": "HeroBanner"
         },
         {
-          "name": "Home"
+          "name": "MenuBar"
+        },
+        {
+          "name": "SelfIntroduction"
+        },
+        {
+          "name": "MyWork"
+        },
+        {
+          "name": "MyLearning"
         }
       ]
     }
