@@ -5,12 +5,12 @@ import tina from '../assets/img/tina.png';
 import tkssir from '../assets/img/tkssir.png';
 import tmm from '../assets/img/tmm.png';
 import personalwebsite from '../assets/img/personalwebsite.png';
-import resume from '../assets/files/resume.pdf';
 import JHeading from '../components/atom/j-heading/index.jsx';
 import { HEADING_SIZES } from '../utils/constants.js';
 import JMenuBar from '../components/molecule/j-menu-bar/index.jsx';
 import JSeparator from '../components/atom/j-separator/index.jsx';
 import SmartArticleCard from '../smart-component/smart-article-card/index.jsx';
+import SelfIntroduction from './self-introduction.jsx';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -34,19 +34,7 @@ const Home = () => {
         navigateMyWork={() => scrollTo(myWorkRef)}
       />
       <JSeparator />
-      <section className="px-8 py-12 border-b border-red-500 intro-text">
-        <p className="pb-8">
-          Hi! My name is Jimmy and I'm a software developer from Sydney, Australia. I currently specialise in Front End
-          Web Development but also have a variety of experience in all areas of software development from Product Design
-          to API Integrations.
-        </p>
-        <p>
-          I'm currently in search of my next role! 👨🏻‍💻 If you have a need for an enthusiastic,
-          energetic, web developer with a passion for building great user experiences in cross functional and
-          collaborative teams, take a look at my <a href={resume} className="link">resume</a> and come say
-          Hi! 👋
-        </p>
-      </section>
+      <SelfIntroduction />
       <JSeparator />
       <section className="px-8 py-12 border-b border-red-500" ref={myWorkRef}>
         <JHeading type={HEADING_SIZES.H2} firstWord="My" secondWord="Work" />
