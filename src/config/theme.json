@@ -48,6 +48,7 @@
         },
         "grey": {
           "grey-900": "#000",
+          "grey-500": "#4a5568",
           "grey-000": "#e8e6e3"
         }
       }
@@ -57,6 +58,9 @@
         "h1": "5rem",
         "h2": "1.875rem",
         "subtitle": "1.875rem"
+      },
+      "paragraph": {
+        "introText": "1.25rem"
       }
     },
     "fontWeight": {
@@ -79,6 +83,10 @@
         "firstWord": "#e53e3e",
         "secondWord": "#9b2c2c",
         "subheader": "#4a5568"
+      },
+      "paragraph": {
+        "introText": "#4a5568",
+        "anchor": "#f56565"
       },
       "button": {
         "backgroundColor": "#e53e3e",

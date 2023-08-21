@@ -22,3 +22,15 @@ export const HEADING_SIZES = {
   H1: 'h1',
   H2: 'h2',
 };
+
+export const TEXT_ALIGN_VALUES = {
+  LEFT: 'left',
+  RIGHT: 'right',
+  CENTER: 'center',
+};
+
+export const TEXT_ALIGN_MAP = {
+  [TEXT_ALIGN_VALUES.LEFT]: 'left',
+  [TEXT_ALIGN_VALUES.RIGHT]: 'right',
+  [TEXT_ALIGN_VALUES.CENTER]: 'center',
+};
