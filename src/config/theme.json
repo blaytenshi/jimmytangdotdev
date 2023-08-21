@@ -61,6 +61,9 @@
       },
       "paragraph": {
         "introText": "1.25rem"
+      },
+      "button": {
+        "text": "1rem"
       }
     },
     "fontWeight": {

@@ -8,6 +8,7 @@ const StyledButton = styled.button`
   appearance: none;
   padding: 0.75rem 0.5rem;
   border-radius: 0.5rem;
+  font-size: ${getTheme('fontSize', 'button', 'text')};
   text-transform: ${(props) => props.$capitalize ? 'uppercase' : 'none' };
   width: ${(props) => props.$fullWidth ? '100%' : 'auto' };
   transition: transform 0.3s cubic-bezier(.4,0,.2,1);
