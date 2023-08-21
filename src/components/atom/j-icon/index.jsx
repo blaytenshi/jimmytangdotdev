@@ -1,6 +1,6 @@
 import useDynamicSVGImport from '../../../hooks/useDynamicSVGImport.js';
 
-const JIcon = ({ name, color = 'white', height = '32px', onCompleted, onError, ...rest }) => {
+const JIcon = ({ name, color = 'white', height = '24px', onCompleted, onError, ...rest }) => {
   const { error, loading, SvgIcon } = useDynamicSVGImport(name, { onCompleted, onError });
 
   if (error) {
