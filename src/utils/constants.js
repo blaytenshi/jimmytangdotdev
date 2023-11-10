@@ -29,6 +29,11 @@ export const TEXT_ALIGN_VALUES = {
   CENTER: 'center',
 };
 
+export const TEXT_SIZE = {
+  SMALL: 'small',
+  MEDIUM: 'medium',
+};
+
 export const TEXT_ALIGN_MAP = {
   [TEXT_ALIGN_VALUES.LEFT]: 'left',
   [TEXT_ALIGN_VALUES.RIGHT]: 'right',

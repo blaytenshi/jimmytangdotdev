@@ -1,8 +1,8 @@
 import StyledParagraph from './styles.js';
 
-const JParagraph = ({ textAlign, children }) => {
+const JParagraph = ({ textAlign, textSize, children }) => {
   return (
-    <StyledParagraph $textAlign={textAlign}>
+    <StyledParagraph $textAlign={textAlign} $textSize={textSize}>
       {children}
     </StyledParagraph>
   );

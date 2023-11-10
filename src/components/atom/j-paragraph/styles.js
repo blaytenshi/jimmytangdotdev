@@ -1,9 +1,9 @@
 import { styled } from 'styled-components';
-import { getTheme } from '../../../utils/index.js';
+import { getFontSize, getTheme } from '../../../utils/index.js';
 import { TEXT_ALIGN_MAP } from '../../../utils/constants.js';
 
 const StyledParagraph = styled.p`
-  font-size: ${getTheme('fontSize', 'paragraph', 'introText')};
+  font-size: ${({ $textSize, textSize }) => getFontSize('paragraph', $textSize)};
   color: ${getTheme('colors', 'paragraph', 'introText')};
   padding-top: ${getTheme('reference', 'spacing', 'px8')};
   text-align: ${({ $textAlign }) => TEXT_ALIGN_MAP[$textAlign] ?? 'left'};

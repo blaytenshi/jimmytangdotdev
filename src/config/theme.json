@@ -11,6 +11,7 @@
         "px12": "0.75rem",
         "px14": "0.875rem",
         "px16": "1rem",
+        "px18": "1.125rem",
         "px20": "1.25rem",
         "px24": "1.5rem",
         "px28": "1.75rem",
@@ -51,6 +52,10 @@
           "grey-500": "#4a5568",
           "grey-000": "#e8e6e3"
         }
+      },
+      "fontWeights": {
+        "w400": 400,
+        "w600": 600
       }
     },
     "fontSize": {
@@ -60,7 +65,8 @@
         "subtitle": "1.875rem"
       },
       "paragraph": {
-        "introText": "1.25rem"
+        "small": "1.125rem",
+        "medium": "1.25rem"
       },
       "button": {
         "text": "1rem"
@@ -108,9 +114,9 @@
         "border": "#f56565"
       },
       "articleCard": {
-        "backgroundColor": "#000",
+        "backgroundColor": "#fff",
         "textHovered": "#e53e3e",
-        "text": "#e8e6e3"
+        "text": "#000"
       }
     }
   }
